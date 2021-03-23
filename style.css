@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    background-image: url(./Images/Background, normal.png);
+    background-image: url(/Images/Background, normal.png);
     font-weight: 800;
     height: 270px;
     padding: 50px;
@@ -59,7 +59,7 @@ main {
 }
 
 footer {
-    background-image: url(./Images/Background, footer.png);
+    background-image: url(https://github.com/kchurches/kchurches.github.io/blob/main/Images/Background%2C%20footer.png);
     height: 270px;
     transform: scaleY(-1);
 }
