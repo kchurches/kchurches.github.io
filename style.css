@@ -93,7 +93,7 @@ a:hover {
 
 /* Header - styling */
 header {
-    background-image: url(./Pics/Background/Background,%20normal.png);
+    background-image: url(./Images/Background,%20normal.png);
     font-weight: 800;
     height: 164px;
     text-align: center;
@@ -171,7 +171,7 @@ header {
 
 /* Footer - styling */
 footer {
-    background-image: url(./Pics/Background/Background,%20footer.png);
+    background-image: url(./Images/Background,%20footer.png);
     height: 164px;
 }
 
