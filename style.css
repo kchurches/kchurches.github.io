@@ -42,35 +42,14 @@
 
 body {
     color: rgb(42, 4, 74);
-    font-family: 'Montserrat', 'Arial', sans-serif;
-}
-
-header {
-    background-image: url(./Images/Background,%20normal.png);
-    font-weight: 800;
-    height: 270px;
-    padding: 50px;
-    text-align: center;
-}
-
-main {
-    margin: 0 auto;
-    width: 70%;
-}
-
-footer {
-    background-image: url(./Images/Background,%20footer.png);
-    height: 270px;
 }
 
 h2 {
     color: rgb(160, 197, 95);
-    font-family: 'Satisfy', 'Segoe Script', cursive;
     font-size: 2.5em;
     letter-spacing: 0.1em;
-    padding: 20px 10px;
+    padding-bottom: 15px;
     text-decoration: underline;
-    text-transform: lowercase;
 }
 
 h4 {
@@ -80,17 +59,11 @@ h4 {
     padding-bottom: 5px;
 }
 
-p {
-    display: inline-block;
-    line-height: 1.5em;
-    padding: 0px 10px 30px 10px;
-}
-
-ul {
+p, ol, ul {
     line-height: 1.5em;
 }
 
-li {
+ul li {
     list-style: square;
 }
 
@@ -98,42 +71,108 @@ a {
     color: rgb(160, 197, 95);
 }
 
-.white-bg {
-    padding-left: 10%;
+a:hover {
+    color: rgb(13, 103, 89);
+    transition: color 0.5s ease 0s;
 }
 
-.green-bg {
-    background-color: rgb(13, 103, 89);
-    color: white;
-    padding-right: 10%;
-    text-align: right;
+
+/* Fonts Styling */
+.Montserrat {
+    font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
-#coding-by {
-    color: rgb(160, 197, 95);
+.Satisfy {
     font-family: 'Satisfy', 'Segoe Script', cursive;
-    font-size: 42px;
+}
+
+.lowercase {
     text-transform: lowercase;
 }
 
+
+/* Header - styling */
+header {
+    background-image: url(./Pics/Background/Background,%20normal.png);
+    font-weight: 800;
+    height: 164px;
+    text-align: center;
+}
+
+#coding-by {
+    display: inline-block;
+    font-size: 32px;
+    text-decoration: none;
+    transform: rotate(330deg);
+    position: relative;
+    bottom: 60px;
+    left: 55px;
+}
+
 #kris {
-    color: rgb(42, 4, 74);
-    font-family: 'Montserrat', 'Arial', sans-serif;
+    color: rgb(255, 255, 255);
+    display: inline-block;
     font-size: 100px;
     letter-spacing: 0.07em;
+    padding-top: 18px;
     text-transform: uppercase;
 }
 
+
+/* Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template: 210px 710px 415px / repeat(2, 1fr);
+    grid-template-areas: "about-me about-me"
+                        "my-story my-skills"
+                        "my-story my-projects";
+    margin: 0 auto;
+    width: 60%;
+}
+
 #about-me {
-    padding-right: 10%;
+    grid-area: about-me;
+    margin: 20px;
 }
 
 #my-story {
-    padding-left: 10%;
+    background-color: rgb(230, 230, 230);
+    grid-area: my-story;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
 }
 
 #my-skills {
-    padding-bottom: 30px;
+    background-color: rgb(13, 103, 89);
+    color: white;
+    grid-area: my-skills;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+}
+
+#my-projects {
+    background-color: rgb(11, 46, 89);
+    color: white;
+    grid-area: my-projects;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/* Styling */
+#my-skills ul {
+    padding: 0 10px 0 30px;
+}
+
+#my-projects ul, #my-projects ol {
+    padding: 0 10px 0 30px;
+}
+
+
+/* Footer - styling */
+footer {
+    background-image: url(./Pics/Background/Background,%20footer.png);
+    height: 164px;
 }
 
 #contact {
@@ -141,8 +180,8 @@ a {
 }
 
 #contact img {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
 }
 
 #contact li {
@@ -151,10 +190,9 @@ a {
     border-radius: 5px;
     display: inline-block;
     margin: 10px;
-    padding: 10px;
 }
 
-#contact a:hover {
+#contact li:hover {
     background-color: rgb(160, 197, 95);
-    transition: background-color 500ms ease 0s;
+    transition: background-color 0.5s ease 0s;
 }
