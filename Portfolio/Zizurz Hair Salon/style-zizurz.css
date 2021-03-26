@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/arimo/v17/P5sfzZCDf9_T_3cV7NCUECyoxNk3CstcABrB.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Changa One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/changaone/v13/xfu00W3wXn3QLUJXhzq42AHiuQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrMfIA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #464646;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover span {
+    color: #cccccc;
+}
+
+
+/* Header Layout */
+header {
+    background-color: #519194;
+    height: 175px;
+}
+
+header ul li {
+    display: inline-block;
+    float: left;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 900px;
+    top: 70px;
+}
+
+nav span {
+    background-color: #1b2130;
+    border-radius: 3px;
+    color: white;
+    margin: 10px;
+    padding: 7px;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h1 span {
+    background-color: #1b2130;
+    color: white;
+    padding: 30px;
+    position: relative;
+    top: 95px;
+    right: 350px;
+}
+
+
+/* Footer Layout */
+footer {
+    background-color: #519194;
+    color: white;
+    height: 130px;
+    margin: 60px 0px 0px 0px;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 55px;
+}
+
+#socials span {
+    background-color: #387482;
+    float: right;
+    padding: 20px 30px;
+    position: relative;
+    right: 450px;
+    top: 15px;
+}
+
+#socials img {
+    margin: 5px;
+}
+
+
+/* Text */
+.Arimo {
+    font-family: 'Arimo';
+}
+
+.Changa-One {
+    font-family: 'Changa One';
+}
+
+.Comfortaa {
+    font-family: 'Comfortaa';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* Home Page - grid layout */
+.home-grid {
+    display: grid;
+    grid-template: 476px 370px 250px 250px / repeat(4, 1fr);
+    grid-template-areas: "banner banner banner banner"
+                        "example-1 example-2 example-3 example-4"
+                        "featured featured hairstyle hairstyle"
+                        "featured featured losing losing";
+    margin: 0 auto;
+    width: 960px;
+}
+
+#banner {
+    background-color: white;
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    color: #1b2130;
+    font-size: 1.5em;
+    grid-area: banner;
+    overflow: hidden;
+    margin: 60px 0;
+    width: 960px;
+}
+
+#example-1 {
+    grid-area: example-1;
+}
+
+#example-2 {
+    grid-area: example-2;
+}
+
+#example-3 {
+    grid-area: example-3;
+}
+
+#example-4 {
+    grid-area: example-4;
+}
+
+#featured {
+    background-color: white;
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    grid-area: featured;
+    height: 500px;
+}
+
+#hairstyle {
+    background-color: #519194;
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    color: white;
+    grid-area: hairstyle;
+    margin: 0 0 0 30px;
+}
+
+#losing {
+    background-color: #519194;
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    color: white;
+    grid-area: losing;
+    margin: 0 0 0 30px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+
+/* Home Page - styling */
+.active-page span {
+    background-color: #285f62;
+}
+
+#banner h2{
+    font-size: 1.6em;
+    position: relative;
+    bottom: 250px;
+    left: 500px;
+}
+
+.examples img {
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+}
+
+.examples h5 {
+    margin: 20px 0px 10px 0px;
+}
+
+.examples p {
+    margin: 0px 5px;
+}
+
+#featured h4 span {
+    background-color: #1b2130;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+#featured img {
+    padding: 20px 20px 0px 20px;
+}
+
+#featured h5 {
+    position: relative;
+    bottom: 90px;
+    left: 150px;
+}
+
+#featured p {
+    padding: 20px 15px 0px 15px;
+}
+
+#hairstyle h4 span {
+    background-color: #1b2130;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+#hairstyle p {
+    padding: 40px 15px 0px 15px;
+}
+
+#hairstyle p span {
+    float: right;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+#losing p {
+    position: relative;
+    bottom: 200px;
+    left: 180px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+
+/* About Page - styling */
+.about-page h4 {
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.about-page h5 {
+    padding-bottom: 20px;
+}
+
+.about-page p {
+    padding-bottom: 40px;
+}
+
+
+/* Hairstyles Page - styling */
+.hairstyles-page h4 {
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.hairstyles-page img {
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.hairstyles-page a {
+    color: #464646;
+    text-decoration: underline;
+}
+
+.hairstyles-page p {
+    text-align: center;
+}
+
+
+/* News Page - styling */
+#main-news-content {
+    
+}
+
+.news-page #news-header {
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.news-page p {
+    padding-bottom: 40px;
+}
+
+#main-news-content {
+    width: 600px;
+}
+
+#recent-news-box {
+    background: white;
+    border: 5px #5fb3bd solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    position: relative;
+    bottom: 415px;
+    left: 650px;
+}
+
+#recent-news-box h4 {
+    padding-bottom: 40px;
+}
+
+
+/* Contact Page - styling */
+.contact-page h4 {
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+
+.contact-page p {
+    padding-bottom: 40px;
+}
