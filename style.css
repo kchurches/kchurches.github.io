@@ -16,19 +16,29 @@
 }
 
 @font-face {
-    font-family: 'Satisfy';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/satisfy/v11/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCu6KVjbNBYlgoKej70l0k.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -44,18 +54,23 @@ body {
     color: rgb(42, 4, 74);
 }
 
+main {
+    background-image: url(./Images/background.jpg);
+    background-size: cover;
+}
+
 h2 {
     color: rgb(160, 197, 95);
+    font-family: 'Ubuntu', 'Helvetica', sans-serif;
     font-size: 2.5em;
     letter-spacing: 0.1em;
     padding-bottom: 15px;
-    text-decoration: underline;
 }
 
 h4 {
     font-size: 1.1em;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 5px;
 }
 
@@ -68,11 +83,11 @@ ul li {
 }
 
 a {
-    color: rgb(160, 197, 95);
+    color: rgba(160, 197, 95, 1);
 }
 
 a:hover {
-    color: rgb(13, 103, 89);
+    color: rgba(13, 103, 89, 1);
     transition: color 0.5s ease 0s;
 }
 
@@ -82,8 +97,12 @@ a:hover {
     font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
-.Satisfy {
-    font-family: 'Satisfy', 'Segoe Script', cursive;
+.Ubuntu {
+    font-family: 'Ubuntu', 'Helvetica', sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .lowercase {
@@ -93,106 +112,245 @@ a:hover {
 
 /* Header - styling */
 header {
-    background-image: url(./Images/Background,%20normal.png);
+    background-color: rgba(42, 4, 74, 1);
     font-weight: 800;
-    height: 164px;
-    text-align: center;
+    height: 80px;
+    position: fixed;
+    width: 100%;
 }
 
 #coding-by {
+    color: rgba(160, 197, 95, 1);
     display: inline-block;
-    font-size: 32px;
-    text-decoration: none;
+    font-size: 16px;
     transform: rotate(330deg);
+    padding-left: 25px;
     position: relative;
-    bottom: 60px;
-    left: 55px;
+    bottom: 25px;
 }
 
 #kris {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1);
     display: inline-block;
-    font-size: 100px;
+    font-size: 45px;
     letter-spacing: 0.07em;
     padding-top: 18px;
-    text-transform: uppercase;
+    position: relative;
+    right: 20px;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    padding: 25px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav li a {
+    text-decoration: none;
 }
 
 
-/* Grid Layout */
+/* Grid - Layout */
 .grid-layout {
     display: grid;
-    grid-template: 210px 710px 415px / repeat(2, 1fr);
-    grid-template-areas: "about-me about-me"
-                        "my-story my-skills"
-                        "my-story my-projects";
-    margin: 0 auto;
-    width: 60%;
+    grid-template: 450px 650px 550px 385px 750px / 100%;
+    grid-template-areas: "banner"
+                        "about-me"
+                        "my-skills"
+                        "my-projects"
+                        "contact";
 }
 
-#about-me {
+.banner-pic {
+    background-image: url(./Images/laptop.jpg);
+    color: rgba(11, 46, 89, 1);
+    grid-area: banner;
+}
+
+.about-me {
     grid-area: about-me;
-    margin: 20px;
+    margin: 20px 0;
 }
 
-#my-story {
-    background-color: rgb(230, 230, 230);
-    grid-area: my-story;
-    margin: 0 20px 20px 20px;
-    padding: 10px;
-}
-
-#my-skills {
-    background-color: rgb(13, 103, 89);
-    color: white;
+.my-skills {
     grid-area: my-skills;
-    margin: 0 20px 20px 20px;
-    padding: 10px;
+    margin: 20px 0;
 }
 
-#my-projects {
-    background-color: rgb(11, 46, 89);
-    color: white;
+.my-projects {
     grid-area: my-projects;
-    margin: 20px;
-    padding: 10px;
+    margin: 20px 0;
+}
+
+.contact {
+    grid-area: contact;
+    margin: 20px 0;
 }
 
 
-/* Styling */
-#my-skills ul {
+/* Grid - Styling */
+.grid-layout hr {
+    border: 2px solid rgba(42, 4, 74, 1);
+    width: 80px;
+}
+
+.hr-right {
+    margin: 0 0 0 auto;
+    text-align: right;
+}
+
+
+/* Banner - Styling */
+#banner-overlay {
+    background-color: rgba(240, 240, 240, 0.25);
+    height: 100%;
+}
+
+#banner-content {
+    margin: 0 auto;
+    padding-top: 170px;
+    width: 70%;
+}
+
+#banner-content h1 {
+    font-size: 70px;
+}
+
+#banner-content hr {
+    border: 2px solid rgba(255, 255, 255, 1);
+    width: 500px;
+}
+
+
+/*About Me - Styling */
+#about-me-content {
+    background-color: rgba(240, 240, 240, 1);
+    margin: 0 auto;
+    padding: 20px;
+    scroll-margin-top: 100px;
+    width: 70%;
+}
+
+#about-me-content h2 {
+    text-align: right;
+}
+
+
+
+/* My Skills - Styling */
+#my-skills-content {
+    background-color: rgb(13, 103, 89);
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    padding: 20px;
+    scroll-margin-top: 100px;
+    width: 70%;
+}
+
+.my-skills ul {
     padding: 0 10px 0 30px;
 }
 
-#my-projects ul, #my-projects ol {
+.my-projects ul, .my-projects ol {
     padding: 0 10px 0 30px;
+}
+
+
+/* My Projects - Styling */
+#my-projects-content {
+    background-color: rgba(11, 46, 89, 1);
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    padding: 20px;
+    scroll-margin-top: 100px;
+    width: 70%;
+}
+
+#my-projects-content h2 {
+    text-align: right;
+}
+
+
+/* Contact - Styling */
+#contact-content {
+    background-color: rgba(240, 240, 240, 1);
+    margin: 0 auto;
+    padding: 20px;
+    scroll-margin-top: 100px;
+    width: 70%;
+}
+
+#contact-form span#req {
+    color: rgba(255, 0, 0, 1);
+    display: inline-block;
+}
+
+#contact-form h4 {
+    display: inline-block;
+}
+
+#contact-form input, #contact-form textarea {
+    display: block;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+#contact-form input {
+    height: 30px;
+    width: 275px;
+}
+
+#contact-form label#message {
+    display: block;
+}
+
+#contact-form textarea {
+    padding: 3px 1px;
+}
+
+#contact-form p {
+    font-size: 0.8em;
+}
+
+#contact-form input#send {
+    background-color: rgba(11, 46, 89, 1);
+    border: 2px solid rgba(11, 46, 89, 1);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25em;
+    height: 50px;
+    margin: 20px 0 0 0;
+    padding: 5px;
+    width: 100px;
+}
+
+#contact-form input#send:hover {
+    background-color: rgba(13, 103, 89, 1);
+    border: 2px solid rgba(13, 103, 89, 1);
 }
 
 
 /* Footer - styling */
 footer {
-    background-image: url(./Images/Background,%20footer.png);
-    height: 164px;
+    background-color: rgba(42, 4, 74, 1);
+    height: 80px;
 }
 
-#contact {
+#socials {
     text-align: center;
 }
 
-#contact img {
-    height: 65px;
-    width: 65px;
+#socials img {
+    height: 30px;
 }
 
-#contact li {
-    background-color: lightgray;
-    border: 2px solid white;
-    border-radius: 5px;
+#socials li {
     display: inline-block;
-    margin: 10px;
-}
-
-#contact li:hover {
-    background-color: rgb(160, 197, 95);
-    transition: background-color 0.5s ease 0s;
+    height: 30px;
+    margin: 25px 10px;
 }
