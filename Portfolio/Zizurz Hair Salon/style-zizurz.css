@@ -367,6 +367,10 @@ footer p {
 
 
 /* Contact Page - styling */
+#contact-body main {
+    height: 100vh;
+}
+
 .contact-page h4 {
     padding-bottom: 40px;
     text-decoration: underline;
