@@ -77,7 +77,6 @@ header {
 }
 
 header ul li {
-    display: inline-block;
     float: left;
     letter-spacing: 0.1em;
     position: relative;
@@ -333,10 +332,6 @@ footer p {
 
 
 /* News Page - styling */
-#main-news-content {
-    
-}
-
 .news-page #news-header {
     padding-bottom: 40px;
     text-decoration: underline;
