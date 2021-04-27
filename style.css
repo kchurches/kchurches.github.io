@@ -51,12 +51,9 @@
 }
 
 body {
-    color: rgb(42, 4, 74);
-}
-
-main {
     background-image: url(./Images/background.jpg);
     background-size: cover;
+    color: rgb(42, 4, 74);
 }
 
 h2 {
@@ -91,6 +88,10 @@ a:hover {
     transition: color 0.5s ease 0s;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 /* Fonts Styling */
 .Montserrat {
@@ -112,41 +113,30 @@ a:hover {
 
 /* Header - styling */
 header {
-    background-color: rgba(42, 4, 74, 1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1));
     font-weight: 800;
     height: 80px;
     position: fixed;
     width: 100%;
 }
 
-#coding-by {
-    color: rgba(160, 197, 95, 1);
+.link-to-top {
     display: inline-block;
-    font-size: 16px;
-    transform: rotate(330deg);
-    padding-left: 25px;
-    position: relative;
-    bottom: 25px;
 }
 
-#kris {
-    color: rgba(255, 255, 255, 1);
-    display: inline-block;
-    font-size: 45px;
-    letter-spacing: 0.07em;
-    padding-top: 18px;
-    position: relative;
-    right: 20px;
+.link-to-top img {
+    padding-left: 25px;
 }
 
 nav {
     float: right;
-    padding: 25px;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 20px;
+    font-size: 20px;
+    list-style: none;
+    padding: 25px 20px;
 }
 
 nav li a {
@@ -157,38 +147,36 @@ nav li a {
 /* Grid - Layout */
 .grid-layout {
     display: grid;
-    grid-template: 450px 650px 550px 385px 750px / 100%;
-    grid-template-areas: "banner"
+    grid-template: 450px 625px 550px 430px 705px / 100%;
+    grid-template-areas: "banner-pic"
                         "about-me"
                         "my-skills"
                         "my-projects"
                         "contact";
+    row-gap: 20px;
 }
 
 .banner-pic {
     background-image: url(./Images/laptop.jpg);
     color: rgba(11, 46, 89, 1);
-    grid-area: banner;
+    grid-area: banner-pic;
+
 }
 
 .about-me {
     grid-area: about-me;
-    margin: 20px 0;
 }
 
 .my-skills {
     grid-area: my-skills;
-    margin: 20px 0;
 }
 
 .my-projects {
     grid-area: my-projects;
-    margin: 20px 0;
 }
 
 .contact {
     grid-area: contact;
-    margin: 20px 0;
 }
 
 
@@ -208,11 +196,14 @@ nav li a {
 #banner-overlay {
     background-color: rgba(240, 240, 240, 0.25);
     height: 100%;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #banner-content {
     margin: 0 auto;
-    padding-top: 170px;
     width: 70%;
 }
 
@@ -334,14 +325,34 @@ nav li a {
 }
 
 
+/* iFrame Contact Form - styling */
+
+
+
 /* Footer - styling */
 footer {
-    background-color: rgba(42, 4, 74, 1);
+    background: linear-gradient(215deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1));
     height: 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #socials {
     text-align: center;
+}
+
+#socials p {
+    color: rgba(245, 245, 245, 1);
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    bottom: 5px;
+}
+
+#socials a {
+    text-decoration: none;
 }
 
 #socials img {
@@ -351,5 +362,5 @@ footer {
 #socials li {
     display: inline-block;
     height: 30px;
-    margin: 25px 10px;
+    padding: 0 10px;
 }
