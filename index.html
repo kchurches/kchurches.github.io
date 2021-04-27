@@ -4,6 +4,7 @@
     <head>
 
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Coding by Kris</title>
         <link href="./style.css" type="text/css" rel="stylesheet">
         
@@ -13,8 +14,11 @@
 
         <header>
 
-            <h5 class="Ubuntu lowercase" id="coding-by">coding by</h2>
-            <h3 class="uppercase" id="kris">kris</h1>
+            <div class="link-to-top">
+                <a href="./index.html">
+                    <img src="./Images/logo 142x80.png">
+                </a>
+            </div>
 
             <nav>
                 <ul>
@@ -54,7 +58,7 @@
                         <br>
                         <p>During this time, I bounced around between a couple different marketing jobs, struggling to find where I fit best. I was discovering that the passion I had for marketing during college was not transferring over into a career as I had hoped. Due to a consistent out-of-place feeling I was experiencing in my day-to-day responsibilities at my job, I decided to quit and take a big leap of faith in February of 2021!</p>
                         <br>
-                        <p>I had taken basic lessons in website development in high school and had been casually streaming on Twitch for a couple months beginning in mid 2020. Suddenly, after I left my job, these two hobbies became the bulk of my day. I now am a Twitch Affiliate and am proficient in the three basic coding languages needed to build practically any website (HTML, CSS, and JavaScript).</p>
+                        <p>I had taken basic lessons in website development in high school and had been casually streaming on Twitch for a couple months beginning in mid 2020. Suddenly, after I left my job, these two hobbies became the bulk of my day. I now am a Twitch Affiliate and am proficient in the three basic coding languages and have also studied additional programming languages.</p>
                         <br>
                         <p>My goal now is to continue improving as both a web developer and as a Twitch content creator. While neither of these pursuits are what I had originally intended to do with my life, I am very happy and am hopeful that my growth and success can continue for many years!</p>
                     </div>
@@ -65,16 +69,17 @@
                         <h2 class="lowercase">my skills & experience</h2>
                         <hr>
                         <br>
-                        <h4>Broadcasting and Content Creation</h4>
-                        <ul>
-                            <li>Schedule, produce, and broadcast video content to a remote website on a regular basis, multiple times a week</li>
-                            <li>Use of various video and audio capture equipment and software, including web broadcasting software</li>
-                        </ul>
-                        <br>
                         <h4>Computer Coding & Web Development</h4>
                         <ul>
                             <li>Proficient in HTML5, CSS3, and JavaScript</li>
+                            <li>Versed in JQuery and PHP</li>
                             <li>Use of Visual Studio Code software to write, edit, and debug code</li>
+                        </ul>
+                        <br>
+                        <h4>Broadcasting and Content Creation</h4>
+                        <ul>
+                            <li>Schedule, produce, and broadcast video content to a remote website and remote audience</li>
+                            <li>Use of various video and audio capture equipment and software, including web broadcasting software</li>
                         </ul>
                         <br>
                         <h4>Marketing</h4>
@@ -102,14 +107,17 @@
                         <br>
                         <h4>Work</h4>
                         <ul>
-                            <li><a href="#">Coding by Kris</a> (this website)</li>
-                            <li><a href="#" target="blank">High Altitude Photography</a></li>
+                            <li><a href="#">Coding by Kris</a> (this website)</li><!-- Fill in later -->
+                            <li><a href="#" target="blank">High Altitude Photography</a></li> <!-- Fill in later -->
                         </ul>
                         <br>
                         <h4>Practice (in order of creation)</h4>
                         <ol>
-                            <li><a href="./Portfolio/Zizurz Hair Salon/home.html" target="blank"> Zizurz Hair Salon</a></li>
-                            <li><a href="./Portfolio/Freeeze Frozen Yogurt/home.html" target="blank"> Freeeze Frozen Yogurt</a></li>
+                            <li><a href="file:///C:/Users/krist.DESKTOP-60FL7UP/Documents/Website%20Files/Portfolio/1_Zizurz%20Hair%20Salon/home.html" target="blank"> Zizurz Hair Salon</a></li>
+                            <li><a href="file:///C:/Users/krist.DESKTOP-60FL7UP/Documents/Website%20Files/Portfolio/2_Freeeze%20Frozen%20Yogurt/home.html" target="blank"> Freeeze Frozen Yogurt</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ol>
                     </div>
                 </div>
@@ -122,22 +130,30 @@
                         <p>Don't be shy, I love to talk!</p>
                         <br>
                         <div id="contact-form">
-                            <form action="form-to-email.php" method="POST">
-                                <label for="name"><span id="req">*</span> <h4>Your Name</label></h4>
-                                <input type="text" name="Name" id="name" required>
+                            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSe8fHrHp5sYCt6F5esruXKO0N9XEC084XQu4Q7M3UAfdoMv5A/formResponse" method="POST">
+                            
+                                <label for="name"><span id="req">*</span><h4>Your Name</h4></label>
+                                <input type="text" name="entry.178494127" id="name" required>
+
                                 <br>
-                                <label for="email"><span id="req">*</span> <h4>Your Email Address</label></h4>
-                                <input type="text" name="Email" id="email" required>
+
+                                <label for="email"><span id="req">*</span><h4>Your Email Address</h4></label>
+                                <input type="email" name="entry.195887441" id="email" required>
+
                                 <br>
-                                <h4><label for="subject">Subject Line</label></h4>
-                                <input type="text" name="Subject" id="subject">
+
+                                <label for="subject"><h4>Subject Line</h4></label>
+                                <input type="text" name="entry.160039737" id="subject">
+
                                 <br>
-                                <h4><label for="message" id="message">Message</label></h4>
-                                <textarea name="Message" cols="60" rows="10" class="Montserrat" id="message"></textarea>
+
+                                <label for="message" id="message"><h4>Message</h4></label>
+                                <textarea name="entry.1994794682" cols="60" rows="10" class="Montserrat" id="message"></textarea>
 
                                 <p><span id="req">*</span> indicates a required field</p>
 
                                 <input type="submit" value="Send" id="send" class="Ubuntu uppercase">
+                            
                             </form>
                         </div>
                     </div>
@@ -151,8 +167,8 @@
 
             <div id="socials">
                 <ul>
-                    <li><a href="mailto:kristynchurches01@gmail.com"><img src="./Images/envelope.png" alt="email icon"></a></li>
-                    <li> <a href="https://www.twitch.tv/kris_outofwater" target="blank"><img src="./Images//Twitch.png" alt="Twitch logo"></a></li>
+                    <li><a href="mailto:kristynchurches01@gmail.com"><p class="Montserrat">@</p></a></li>
+                    <li><a href="https://www.twitch.tv/kris_outofwater" target="blank"><img src="./Images/Twitch.png" alt="Twitch logo"></a></li>
                     <li><a href="https://twitter.com/Kris_outofwater" target="blank"><img src="./Images/Twitter.png" alt="Twitter logo"></a></li>
                     <li><a href="https://www.youtube.com/channel/UC4zWvAsTsLReUP4FYOYm4Vw" target="blank"><img src="./Images/YouTube.png" alt="YouTube logo"></a></li>
                 </ul>
