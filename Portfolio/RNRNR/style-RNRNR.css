@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    background-image: url(./images/bg-home.png);
+    background-image: url(./Images/bg-home.png);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -465,17 +465,17 @@ footer {
 }
 
 .twitter-icon:hover {
-    content: url("./images/twitter green.png");
+    content: url("./Images/twitter green.png");
 }
 
 .facebook-icon:hover {
-    content: url(".//images/facebook purple.png");
+    content: url("./Images/facebook purple.png");
 }
 
 .google-plus-icon:hover {
-    content: url("./images/google plus orange.png");
+    content: url("./Images/google plus orange.png");
 }
 
 .pinterest-icon:hover {
-    content: url(".//images/pinterest yellow.png");
+    content: url("./Images/pinterest yellow.png");
 }
