@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+main {
+    background-image: url(./images/bg-home.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.black-overlay {
+    background-color: rgba(0, 0, 0, .85);
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+
+.pink-hr {
+    border: 3px solid rgba(251, 65, 111, 1);
+    width: 80px;
+}
+
+.white-hr {
+    border: 3px solid rgba(255, 255, 255, 1);
+    width: 80px;
+}
+
+
+/* Fonts - styling */
+.Arial-Black {
+    font-family: 'Arial Black';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* Header - styling */
+header {
+    background-color: rgba(255, 255, 255, 1);
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+    height: 225px;
+}
+
+header ul {
+    font-size: 0.85em;
+}
+
+header ul a:hover {
+    color: rgba(22, 171, 136, 1);
+}
+
+header ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+header img {
+    display: inline-block;
+    padding-top: 45px;
+}
+
+nav {
+    float: right;
+    padding-top: 80px;
+}
+
+.header-content {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.active-page {
+    color: rgba(251, 65, 111, 1);
+}
+
+.active-page:hover {
+    color: rgba(251, 65, 111, 1);
+}
+
+
+/* Home Page - Banner - styling */
+.home-banner-content {
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    width: 1000px;
+}
+
+.home-banner-content h1 {
+    font-size: 6em;
+    line-height: 0.85em;
+    margin-bottom: 50px;
+}
+
+.home-banner-content a {
+    border: 5px solid rgba(0, 0, 0, 1);
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+}
+
+
+/* Home Page - Pink Overlay - styling */
+.home-overlay-background {
+    background-color: rgba(251, 65, 111, .8);
+    height: 480px;
+}
+
+.home-overlay-content {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+}
+
+.home-overlay-content h3 {
+    font-size: 2.5em;
+    padding-top: 40px;
+}
+
+.home-overlay-content #top-hr {
+    margin: 40px auto 20px auto;
+}
+
+.home-overlay-content #bottom-hr {
+    margin: 20px auto 60px auto;
+}
+
+.home-overlay-content p {
+    font-size: 1.5em;
+    line-height: 2.15em;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.home-overlay-content a {
+    border: 5px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.home-overlay-content a:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color:rgba(251, 65, 111, 1);
+}
+
+
+/* About Page */
+.about-overlay h3 {
+    color: rgba(251, 65, 111, 1);
+    font-size: 2.5em;
+    padding: 40px 0 20px 0;
+}
+
+.about-overlay hr {
+    margin: 0 auto 20px auto;
+}
+
+.about-overlay img {
+    padding-bottom: 30px;
+}
+
+.about-overlay h4, .about-overlay p {
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.15em;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.about-overlay h4 {
+    font-size: 1.25em;
+}
+
+.about-overlay p {
+    padding-bottom: 40px;
+}
+
+
+/* Running Page - styling */
+.running-overlay h3 {
+    color: rgba(251, 65, 111, 1);
+    font-size: 2.5em;
+    padding: 40px 0 20px 0;
+}
+
+#running-top-hr {
+    margin: 0 auto 20px auto;
+}
+
+.running-overlay img {
+    padding: 0 10px;
+}
+
+#running-middle-hr, #running-bottom-hr {
+    margin: 40px auto 40px auto;
+}
+
+.running-overlay h5, .running-overlay p {
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.15em;
+    margin: 0 auto;
+    width: 700px;
+}
+
+.running-overlay h5 {
+    font-size: 1.75em;
+}
+
+.running-overlay p {
+    padding-bottom: 40px;
+}
+
+
+/* Blog Page - styling */
+.blog-overlay h3 {
+    color: rgba(251, 65, 111, 1);
+    font-size: 2.5em;
+    padding: 40px 0 20px 0;
+}
+
+.blog-overlay hr {
+    margin: 0 auto 40px auto;
+}
+
+.blog-overlay h4, .blog-overlay p, .blog-overlay a {
+    color: rgba(255, 255, 255, 1);
+    line-height: 2.15em;
+}
+
+.blog-overlay h4 {
+    font-size: 1.75em;
+    font-weight: normal;
+}
+
+.blog-overlay a {
+    border: 2px solid rgba(255, 255, 255, 1);
+    font-size: 1.25em;
+    font-weight: normal;
+    margin-top: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.blog-overlay a:hover {
+    background-color: rgba(251, 65, 111, 1);
+    border: 2px solid rgba(251, 65, 111, 1);
+}
+
+
+/* Blog Page - grid layout */
+.blog-grid {
+    display: grid;
+    grid-row-gap: 40px;
+    grid-template: repeat(4, 1fr) / 30% 70%;
+    grid-template-areas: "marathon-blog-img marathon-blog-content"
+                        "running-blog-img running-blog-content"
+                        "winning-blog-img winning-blog-content"
+                        "crossfit-blog-img crossfit-blog-content";
+    margin: 0 auto;
+    width: 800px;
+}
+
+#marathon-blog-img {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: marathon-blog-img;
+}
+
+#marathon-blog-content {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: marathon-blog-content;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#running-blog-img {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: running-blog-img;
+}
+
+#running-blog-content {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: running-blog-content;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#winning-blog-img {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: winning-blog-img;
+}
+
+#winning-blog-content {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+    grid-area: winning-blog-content;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#crossfit-blog-img {
+    grid-area: crossfit-blog-img;
+    padding-bottom: 40px;
+}
+
+#crossfit-blog-content {
+    grid-area: crossfit-blog-content;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Contact Page - styling */
+.contact-overlay {
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-overlay h3 {
+    color: rgba(251, 65, 111, 1);
+    font-size: 2.5em;
+    padding: 40px 0 20px 0;
+}
+
+.contact-overlay hr {
+    margin: 0 auto 20px auto;
+}
+
+.contact-overlay h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.contact-overlay a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact-overlay h2 {
+    padding: 20px 0;
+}
+
+.contact-form {
+    padding-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color:rgba(0, 0, 0, .1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: rgba(251, 65, 111, 1);
+    display: block;
+    font-family: Arial;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 5px auto 0 auto;
+    padding: 5px 0;
+    width: 450px;
+}
+
+.contact-form input {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-form input#send {
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    width: 150px;
+}
+
+.contact-form input#send:hover {
+    background-color:rgba(251, 65, 111, 1);
+    border: 2px solid rgba(251, 65, 111, 1);
+}
+
+
+/* Individual Blog - styling*/
+.individual-blog-overlay {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 auto;
+    width: 800px;
+}
+
+.individual-blog-overlay h3 {
+    color: rgba(251, 65, 111, 1);
+    font-size: 2.5em;
+    padding: 40px 0 20px 0;
+}
+
+.individual-blog-overlay hr {
+    margin: 0 auto 20px auto;
+}
+
+.individual-blog-overlay img {
+    float: left;
+    padding: 20px 20px 20px 5px;
+}
+
+.individual-blog-overlay p {
+    font-size: 1.25em;
+    line-height: 2.15em;
+    padding: 20px 0 40px 0;
+    text-align: left;
+    text-indent: 50px;
+}
+
+
+/* Footer - styling */
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.footer-content p {
+    display: inline-block;
+}
+
+.social-icons {
+    float: right;
+}
+
+.footer-content img {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.twitter-icon:hover {
+    content: url("./images/twitter green.png");
+}
+
+.facebook-icon:hover {
+    content: url(".//images/facebook purple.png");
+}
+
+.google-plus-icon:hover {
+    content: url("./images/google plus orange.png");
+}
+
+.pinterest-icon:hover {
+    content: url(".//images/pinterest yellow.png");
+}
