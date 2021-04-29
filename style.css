@@ -326,10 +326,6 @@ nav li a {
 }
 
 
-/* iFrame Contact Form - styling */
-
-
-
 /* Footer - styling */
 footer {
     background: linear-gradient(215deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1));
@@ -338,6 +334,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 #socials {
