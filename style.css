@@ -54,6 +54,7 @@ body {
     background-image: url(./Images/background.jpg);
     background-size: cover;
     color: rgb(42, 4, 74);
+    width: 100%;
 }
 
 h2 {
