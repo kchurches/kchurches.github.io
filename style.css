@@ -96,11 +96,11 @@ main ul li {
     list-style: square;
 }
 
-a {
+main a {
     color: rgba(160, 197, 95, 1);
 }
 
-a:hover {
+main a:hover {
     color: rgba(13, 103, 89, 1);
     transition: all 0.4s ease-out 0s;
 }
@@ -134,7 +134,8 @@ Header & Hamburger Menu - styling
 *
 */
 header {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1));
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1)); */
+    background-color: rgba(240, 240, 240, 1);
     font-weight: 800;
     height: 80px;
     position: fixed;
@@ -159,11 +160,23 @@ header {
     font-size: 1.25em;
     min-height: 48px;
     min-width: 48px;
-    padding: 25px 20px;
+    padding: 25px 10px;
+}
+
+.nav-bar li a {
+    color: rgba(42, 4, 74, 1);
+    padding: 10px;
+}
+
+.nav-bar li a:hover {
+    background-color: rgba(11, 46, 89, 1);
+    border-radius: 3px;
+    color:rgba(255, 255, 255, 1);
+    transition: all 0.4s ease-out 0s;
 }
 
 .menu-toggle .bar {
-    background-color: rgba(160, 197, 95, 1);
+    background-color: rgba(42, 4, 74, 1);
     height: 3px;
     margin: 5px auto;
     transition: all 0.4s ease-out 0s;
@@ -218,7 +231,7 @@ Banner - styling
 #banner-overlay {
     background-color: rgba(240, 240, 240, 0.25);
     height: 100%;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,7 +260,7 @@ About Me - styling
     background-color: rgba(240, 240, 240, 1);
     margin: 0 auto 20px auto;
     padding: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 #about-me h2 {
@@ -266,7 +279,7 @@ My Skills - styling
     color: rgba(255, 255, 255, 1);
     margin: 0 auto 20px auto;
     padding: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 #my-skills ul {
@@ -281,7 +294,7 @@ My Skills - styling
     color: rgba(255, 255, 255, 1);
     margin: 0 auto 20px auto;
     padding: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 #my-projects h2 {
@@ -306,7 +319,7 @@ Contact Me - styling
     background-color: rgba(240, 240, 240, 1);
     margin: 0 auto;
     padding: 20px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 80px;
 }
 
 #contact-form span#req {
@@ -368,7 +381,7 @@ Footer - styling
 *
 */
 footer {
-    background: linear-gradient(215deg, rgba(255, 255, 255, 1), rgba(42, 4, 74, 1));
+    background-color: rgba(42, 4, 74, 1);
     height: 80px;
     width: 100%;
     display: flex;
@@ -414,6 +427,10 @@ Media Queries
 769px — 1024px: Small screens, laptops.
 */
 @media screen and (max-width: 449px) {
+    h2 {
+        font-size: 1.75em;
+    }
+
     .banner-pic {
         height: 250px;
     }
@@ -422,7 +439,7 @@ Media Queries
         margin-left: 7.5%;
     }
     #banner-content h1 {
-        font-size: 2.25em;
+        font-size: 1.65em;
     }
 
     #banner-content hr {
@@ -441,6 +458,10 @@ Media Queries
 }
 
 @media screen and (min-width: 450px) and (max-width: 599px) {
+    h2 {
+        font-size: 1.75em;
+    }
+
     .banner-pic {
         height: 350px;
     }
@@ -450,7 +471,7 @@ Media Queries
     }
 
     #banner-content h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     #banner-content hr {
@@ -527,14 +548,14 @@ Media Queries
     }
 
     .nav-menu.active {
-        background-color: rgba(11, 46, 89, 1);
+        background-color: rgba(240, 240, 240, 1);
         opacity: 1;
         transition: all 0.4s ease-out 0s;
         left: 0;
     }
 
     .nav-links {
-        background-color: rgba(11, 46, 89, 1);
+        background-color: rgba(240, 240, 240, 1);
         display: table;
         line-height: 60px;
         text-align: center;
@@ -542,9 +563,13 @@ Media Queries
     }
 
     .nav-links:hover {
-        background-color: rgba(240, 240, 240, 1);
-        color: rgba(42, 4, 74, 1);
+        background-color: rgba(11, 46, 89, 1);
+        color: rgba(255, 255, 255, 1);
         transition: all 0.4s ease-out 0s;
+    }
+
+    #banner-overlay {
+        padding-top: 80px;
     }
 }
 
