@@ -222,6 +222,7 @@ Banner - styling
 */
 .banner-pic {
     background-image: url(./Images/laptop.jpg);
+    background-size: cover;
     color: rgba(11, 46, 89, 1);
     height: 450px;
     width: 100%;
