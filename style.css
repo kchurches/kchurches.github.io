@@ -368,6 +368,8 @@ Contact Me - styling
     padding: 5px;
     width: 100px;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #contact-form input#send:hover {
