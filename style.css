@@ -418,7 +418,19 @@ footer {
 
 #socials li p:hover {
     color: rgba(160, 197, 95, 1);
-    transition: all 0.4s ease-out 0s;
+    /* transition: all 0.4s ease-out 0s; */
+}
+
+#twitch-icon:hover {
+    content: url(./Images/Twitch\ -\ active.png);
+}
+
+#twitter-icon:hover {
+    content: url(./Images/Twitter\ -\ active.png);
+}
+
+#linkedin-icon:hover {
+    content: url(./Images/LinkedIn\ -\ active.png);
 }
 
 
