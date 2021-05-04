@@ -367,6 +367,7 @@ Contact Me - styling
     min-width: 48px;
     padding: 5px;
     width: 100px;
+    -webkit-appearance: none;
 }
 
 #contact-form input#send:hover {
