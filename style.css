@@ -140,18 +140,16 @@ Fonts - styling
 
 /*
 *
-Polaroids - styling
+Polaroid images - styling
 *
 */
 .polaroid img {
     margin: 0;
     padding: 0;
-    width: 250px;
 }
 
 .polaroid p {
     color: rgba(13, 103, 89, 1);
-    font-size: 25px;
     margin: 0 auto;
     width: calc(100% - 20px);
 }
@@ -309,11 +307,8 @@ About Me - styling
     background-color: white;
     border: 1px solid rgba(169, 169, 169, 1);
     box-shadow: 5px 5px 10px rgb(150,150,150);
-    float: left;
-    height: 350px; /* 100px more than .polaroid img width */
     padding: 10px 0;
     text-align: center;
-    width: 290px; /* 40px more than .polaroid img width  */
 }
 
 #kyle-selfie {
@@ -321,6 +316,14 @@ About Me - styling
     transform: rotate(-12deg);
     -ms-transform: rotate(-12deg);
     -webkit-transform: rotate(-12deg);
+}
+
+#kyle-selfie img {
+    max-width: 250px;
+}
+
+.about-me-p {
+    text-indent: 50px;
 }
 
 
@@ -343,33 +346,28 @@ My Skills - styling
     padding: 0 10px 0 30px;
 }
 
-.my-skills .polaroid {
+.my-skills-images .polaroid {
     background-color: white;
     border: 1px solid rgba(169, 169, 169, 1);
     box-shadow: 5px 5px 10px rgb(150,150,150);
-    float: right;
-    height: 310px; /* 60px more than .polaroid img width */
     padding: 10px 0;
     text-align: center;
-    width: 290px; /* 40px more than .polaroid img width  */
+}
+
+#josie {
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
 }
 
 #bailey {
-    position: relative;
-    right: 25px;
-    top: 150px;
     transform: rotate(5deg);
     -ms-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
 }
 
-#josie {
-    position: relative;
-    bottom: 70px;
-    left: 50px;
-    transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -webkit-transform: rotate(25deg);
+#bailey img, #josie img {
+    max-width: 200px;
 }
 
 
@@ -412,24 +410,27 @@ Contact Me - styling
     scroll-margin-top: 80px;
 }
 
-.contact .polaroid {
+.contact-image {
+    margin: 50px 75px 0 auto;
+}
+
+.contact-image .polaroid {
     background-color: white;
     border: 1px solid rgba(169, 169, 169, 1);
     box-shadow: 5px 5px 10px rgb(150,150,150);
-    float: right;
-    height: 460px; /* 160px more than .contact img width */
     padding: 10px 0;
     text-align: center;
-    width: 340px; /* 40px more than .contact img width  */
 }
 
-.contact img {
-    width: 300px;
+.contact-image p {
+    line-height: 1em;
 }
 
-#selfie {
-    position: relative;
-    right: 100px;
+#mom-pic img {
+    max-width: 300px;
+}
+
+#mom-pic {
     transform: rotate(-3deg);
     -ms-transform: rotate(-3deg);
     -webkit-transform: rotate(-3deg);
@@ -531,11 +532,6 @@ footer {
 Media Queries
 *
 */
-/* Common breakpoints:
-320px — 480px: Mobile devices.
-481px — 768px: iPads, Tablets.
-769px — 1024px: Small screens, laptops.
-*/
 @media screen and (max-width: 384px) {
     #banner-content {
         margin-left: 7.5%;
@@ -592,8 +588,91 @@ Media Queries
     }
 }
 
-/* Mobile nav hamburger menu only */
+/* Polaroid images only */
+@media screen and (max-width: 519px) {    
+    .about-me .polaroid {
+        height: 250px;
+        width: 215px;
+    }
+
+    #kyle-selfie {
+        margin: 25px 0 35px 0;
+    }
+
+    #kyle-selfie img {
+        width: 175px;
+    }
+
+    .my-skills-images .polaroid {
+        height: 225px;
+        width: 215px;
+    }
+
+    #josie img, #bailey img {
+        width: 175px;
+    }   
+}
+
+/* Polaroid images only */
+@media screen and (max-width: 702px) {
+    #josie {
+        margin: 30px auto 0 auto;
+    }
+
+    #bailey {
+        margin: 20px auto 0 auto;
+    }
+}
+
+/* Polaroid images only */
+@media screen and (min-width: 703px) and (max-width: 768px) {
+    #josie {
+        display: inline-block;
+        margin: 30px 0 0 25px;
+    }
+
+    #bailey {
+        display: inline-block;
+        margin: 20px 0 0 15px;
+    }
+}
+
+/* Polaroid images only */
+@media screen and (min-width: 520px) and (max-width: 768px) {
+    .about-me .polaroid {
+        height: 250px;
+        width: 215px;
+    }
+
+    #kyle-selfie {
+        margin-bottom: 35px;
+    }
+
+    #kyle-selfie img {
+        width: 175px;
+    }
+
+    .my-skills-images .polaroid {
+        height: 225px;
+        width: 215px;
+    }
+
+    #josie img, #bailey img {
+        width: 175px;
+    }    
+}
+
+/* Mobile nav hamburger menu and polaroid images */
 @media screen and (max-width: 768px) {
+    #contact-form {
+        margin-bottom: -50px;
+    }
+
+    .contact-image .polaroid {
+        display: none;
+    }
+
+    /* Hamburger menu */
     .nav-container {
         position: relative;
     }
@@ -672,7 +751,27 @@ Media Queries
     }
 }
 
+@media screen and (min-width: 600px) and (max-width: 849px) {
+    .nav-bar li a:hover {
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+    }
 
+    #banner-content {
+        margin-left: 12.5%;
+    }
+
+    .about-me, .my-skills, .my-projects, .contact {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+    #contact-form textarea {
+        width: 400px;
+    }
+}
+
+/* Polaroid images */
 @media screen and (min-width: 769px) and (max-width: 849px) {
     h2 {
         font-size: 3vw;
@@ -697,29 +796,58 @@ Media Queries
         transition: filter 0.1s ease-out 0s;
         transition: position 0.4s ease-out 0s;
     }
+
+    /* Polaroid images */
+    .about-me .polaroid {
+        float: left;
+        height: 250px;
+        width: 215px;
+    }
+
+    #kyle-selfie img {
+        width: 175px;
+    }
+
+    .my-skills {
+        display: flex;
+    }
+
+    .my-skills-images .polaroid {
+        height: 225px;
+        margin-left: 25px;
+        width: 215px;
+    }
+
+    #josie img, #bailey img {
+        width: 175px;
+    }
+
+    #contact-form {
+        margin-bottom: -320px;
+    }
+
+    .contact .polaroid {
+        height: 270px;
+        width: 210px;
+        position: relative;
+        bottom: 320px;
+        left: 300px;
+    }
+
+    #mom-pic img {
+        width: 170px;
+    }
 }
 
-@media screen and (min-width: 600px) and (max-width: 849px) {
-    .nav-bar li a:hover {
-        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
-    }
-
-    #banner-content {
-        margin-left: 12.5%;
-    }
-
-    .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
-        width: 75%;
-    }
-
-    #contact-form textarea {
-        width: 400px;
+/* .polaroid p font-size only */
+@media screen and (max-width: 849px) {
+    .polaroid p {
+        font-size: 18px;
     }
 }
 
-@media screen and (min-width: 849px) {
+/* Polaroid images */
+@media screen and (min-width: 850px) {
     h2 {
         font-size: 3vw;
     }
@@ -748,5 +876,105 @@ Media Queries
         bottom: 8px;
         transition: filter 0.1s ease-out 0s;
         transition: position 0.4s ease-out 0s;
+    }
+
+    /* Polaroid images */
+    .polaroid p {
+        font-size: 25px;
+    }
+    
+    .about-me .polaroid {
+        float: left;
+        height: 350px;
+        width: 290px;
+    }
+
+    .my-skills {
+        display: flex;
+    }
+
+    .my-skills-images .polaroid {
+        margin-left: 35px;
+        height: 260px;
+        width: 240px;
+    }
+
+    #kyle-selfie img {
+        width: 250px;
+    }
+
+    #josie img, #bailey img {
+        width: 200px;
+    }
+
+    #bailey {
+        margin-bottom: -100px;
+    }
+}
+
+/* Polaroid images */
+@media screen and (min-width: 850px) and (max-width: 1149px) {
+    #contact-form {
+        margin-bottom: -345px;
+    }
+
+    .contact .polaroid {
+        height: 295px;
+        width: 210px;
+        position: relative;
+        bottom: 320px;
+        left: 300px;
+    }
+
+    #mom-pic img {
+        width: 170px;
+    }
+}
+
+/* Polaroid images */
+@media screen and (min-width: 1150px) and (max-width: 1199px) {
+    .contact {
+        display: flex;
+    }
+
+    .contact .polaroid {
+        height: 295px;
+        width: 210px;
+    }
+
+    #mom-pic img {
+        width: 170px;
+    }
+}
+
+/* Polaroid images */
+@media screen and (min-width: 1200px) and (max-width: 1329px) {
+    .contact {
+        display: flex;
+    }
+
+    .contact .polaroid {
+        height: 355px;
+        width: 255px;
+    }
+
+    #mom-pic img {
+        width: 215px;
+    }
+}
+
+/* Polaroid images */
+@media screen and (min-width: 1330px) {
+    .contact {
+        display: flex;
+    }
+
+    .contact-image .polaroid {
+        height: 455px;
+        width: 340px;
+    }
+
+    #mom-pic img {
+        width: 300px;
     }
 }
