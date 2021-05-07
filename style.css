@@ -346,6 +346,10 @@ My Skills - styling
     scroll-margin-top: 80px;
 }
 
+#resume {
+    font-size: 1.4em;
+}
+
 .my-skills ul {
     padding: 0 10px 0 30px;
 }
