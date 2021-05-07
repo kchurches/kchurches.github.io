@@ -596,7 +596,7 @@ Media Queries
     }
 
     #kyle-selfie {
-        margin: 25px 0 35px 0;
+        margin: 25px auto 35px auto;
     }
 
     #kyle-selfie img {
