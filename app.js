@@ -1,22 +1,35 @@
+const mediaQuery = window.matchMedia('(max-width: 768px)');
 const mobileMenu = document.querySelector('#mobile-menu');
 const navMenu = document.querySelector('.nav-menu');
 const header = document.querySelector('header');
 
-// On hamburger menu click, turn hamburger menu into X, open nav menu, and add or remove 'box-shadow' class to the header depending on status
-mobileMenu.addEventListener('click', function() {
-    mobileMenu.classList.toggle('is-active');
-    navMenu.classList.toggle('active');
 
-    if (header.classList === 'box-shadow') {
-        header.classList.remove('box-shadow');
-    } else {
-        header.classList.toggle('box-shadow');
+mediaQuery.addEventListener('change', handleDeviceChange);
+
+
+function handleDeviceChange(e) {
+    if (e.matches) { // If the screen is 768px or smaller,
+        mobileMenu.addEventListener('click', function() { // and the hamburger is clicked,
+            mobileMenu.classList.toggle('is-active'); // the hamburger turns into an X,
+            navMenu.classList.toggle('active'); // the navMenu slides out from the left,
+        
+            if (header.classList === 'box-shadow') { // and IF the header has a shadow (which it does on page load),
+                header.classList.remove('box-shadow'); // remove the shadow on the header,
+            } else {
+                header.classList.toggle('box-shadow'); // otherwise (on second click), leave the shadow on the header alone.
+        }});
+
+        navMenu.addEventListener('click', function() { // and a navMenu item is clicked,
+            mobileMenu.classList.remove('is-active'); // change the X back into a hamburger,
+            navMenu.classList.remove('active'); // slide the navMenu off screen to the left,
+            header.classList.add('box-shadow'); // and put the shadow back on the header.
+        });
+    } else { // Otherwise (if the screen is 769px or bigger),
+        navMenu.addEventListener('click', function() { // and a navMenu item is clicked,
+            header.classList.add('box-shadow'); // add the shadow to the header.
+        });
     };
-});
+};
 
-// On nav menu click, turn X back into hamburger menu, close nav menu, and add 'box-shadow' class to header
-navMenu.addEventListener('click', function() {
-    mobileMenu.classList.remove('is-active');
-    navMenu.classList.remove('active');
-    header.classList.toggle('box-shadow');
-});
+
+handleDeviceChange(mediaQuery);
