@@ -67,6 +67,10 @@ General Tag - styling
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body, main {
     width: 100%;
 }
