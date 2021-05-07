@@ -301,6 +301,7 @@ About Me - styling
 
 #about-me-link {
     scroll-margin-top: 80px;
+    scroll-snap-margin-top: 80px;
 }
 
 .about-me h2 {
@@ -344,6 +345,7 @@ My Skills - styling
 
 #my-skills-link {
     scroll-margin-top: 80px;
+    scroll-snap-margin-top: 80px;
 }
 
 #resume {
@@ -388,6 +390,7 @@ My Skills - styling
 
 #my-projects-link {
     scroll-margin-top: 80px;
+    scroll-snap-margin-top: 80px;
 }
 
 .my-projects h2 {
@@ -416,6 +419,7 @@ Contact Me - styling
 
 #contact-link {
     scroll-margin-top: 80px;
+    scroll-snap-margin-top: 80px;
 }
 
 .contact-image {
