@@ -168,6 +168,7 @@ header {
     background-color: rgba(240, 240, 240, 0.75);
     font-weight: 800;
     height: 80px;
+    min-width: 300px;
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -269,13 +270,10 @@ Banner - styling
 .banner-overlay {
     background-color: rgba(240, 240, 240, 0.2);
     height: 15vw;
+    min-height: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-#banner-content {
-    font-size: 2vw;
 }
 
 #banner-content h1 {
@@ -296,12 +294,12 @@ About Me - styling
 .about-me {
     background-color: rgba(250, 250, 250, 1);
     margin: 0 auto 20px auto;
+    min-width: 300px;
     padding: 20px;
 }
 
 #about-me-link {
     scroll-margin-top: 80px;
-    scroll-snap-margin-top: 80px;
 }
 
 .about-me h2 {
@@ -340,12 +338,12 @@ My Skills - styling
 .my-skills {
     background-color: rgba(220, 220, 220, 1);
     margin: 0 auto 20px auto;
+    min-width: 300px;
     padding: 20px;
 }
 
 #my-skills-link {
     scroll-margin-top: 80px;
-    scroll-snap-margin-top: 80px;
 }
 
 #resume {
@@ -385,12 +383,12 @@ My Skills - styling
 .my-projects {
     background-color: rgba(250, 250, 250, 1);
     margin: 0 auto 20px auto;
+    min-width: 300px;
     padding: 20px;
 }
 
 #my-projects-link {
     scroll-margin-top: 80px;
-    scroll-snap-margin-top: 80px;
 }
 
 .my-projects h2 {
@@ -414,12 +412,12 @@ Contact Me - styling
 .contact {
     background-color: rgba(220, 220, 220, 1);
     margin: 0 auto;
+    min-width: 300px;
     padding: 20px;
 }
 
 #contact-link {
     scroll-margin-top: 80px;
-    scroll-snap-margin-top: 80px;
 }
 
 .contact-image {
@@ -513,6 +511,7 @@ Footer - styling
 footer {
     background-color: rgba(13, 103, 89, 1);
     height: 80px;
+    min-width: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -558,14 +557,6 @@ Media Queries
     #contact-form input, #contact-form textarea {
         width: 225px;
     }
-
-    .socials p {
-        font-size: 8vw;
-    }
-
-    .socials img {
-        height: 8vw;
-    }
 }
 
 @media screen and (min-width: 385px) and (max-width: 449px) {
@@ -581,6 +572,18 @@ Media Queries
 
     #contact-form textarea {
         width: 275px;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    #banner-content {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 465px) and (max-width: 519px) {
+    #banner-content {
+        font-size: 2vw;
     }
 }
 
@@ -601,7 +604,7 @@ Media Queries
 }
 
 /* Polaroid images only */
-@media screen and (max-width: 519px) {    
+@media screen and (max-width: 519px) {
     .about-me .polaroid {
         height: 250px;
         width: 215px;
@@ -651,6 +654,10 @@ Media Queries
 
 /* Polaroid images only */
 @media screen and (min-width: 520px) and (max-width: 768px) {
+    #banner-content {
+        font-size: 2vw;
+    }
+
     .about-me .polaroid {
         height: 250px;
         width: 215px;
@@ -797,6 +804,10 @@ Media Queries
         box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
     }
 
+    #banner-content {
+        font-size: 2vw;
+    }
+
     .socials {
         filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.4));
     }
@@ -926,6 +937,10 @@ Media Queries
 
 /* Polaroid images */
 @media screen and (min-width: 850px) and (max-width: 1149px) {
+    #banner-content {
+        font-size: 2vw;
+    }
+
     #contact-form {
         margin-bottom: -345px;
     }
@@ -945,6 +960,10 @@ Media Queries
 
 /* Polaroid images */
 @media screen and (min-width: 1150px) and (max-width: 1199px) {
+    #banner-content {
+        font-size: 2vw;
+    }
+
     .contact {
         display: flex;
     }
@@ -961,6 +980,10 @@ Media Queries
 
 /* Polaroid images */
 @media screen and (min-width: 1200px) and (max-width: 1329px) {
+    #banner-content {
+        font-size: 2vw;
+    }
+
     .contact {
         display: flex;
     }
@@ -977,6 +1000,10 @@ Media Queries
 
 /* Polaroid images */
 @media screen and (min-width: 1330px) {
+    #banner-content {
+        font-size: 2vw;
+    }
+
     .contact {
         display: flex;
     }
