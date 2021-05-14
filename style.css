@@ -1008,7 +1008,7 @@ Media Queries - print
 *
 */
 @media only print {
-    footer a[href^="http"]:after {
+    footer a[href^="http"]:after, footer a[href^="mailto"]:after {
         content: " (" attr(href) ")";
     }
 
