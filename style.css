@@ -91,26 +91,6 @@ General Tag - styling
         --font-Ubuntu: 'Ubuntu', 'Helvetica', sans-serif;
 }
 
-/* .Montserrat {
-    font-family: 'Montserrat', 'Arial', sans-serif;
-}
-
-.Ubuntu {
-    font-family: 'Ubuntu', 'Helvetica', sans-serif;
-}
-
-.Indie-Flower {
-    font-family: 'Indie Flower', cursive;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.lowercase {
-    text-transform: lowercase;
-} */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -137,7 +117,8 @@ body {
 
 h2 {
     color: var(--color-light-green);
-    font-family: 'Ubuntu', 'Helvetica', sans-serif;
+    font-family: var(--font-Ubuntu);
+    font-size: max(22px, 3vw);
     letter-spacing: 0.1em;
     padding-bottom: 15px;
 }
@@ -164,6 +145,10 @@ main a {
 main a:hover {
     color: var(--color-light-green);
     transition: all 0.4s ease-out 0s;
+}
+
+main a:visited {
+    color: var(--color-purple);
 }
 
 
@@ -282,6 +267,10 @@ Main Content - styling
     text-align: right;
 }
 
+.about-me, .my-skills, .my-projects, .contact {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*
 *
@@ -302,6 +291,10 @@ Banner - styling
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#banner-content {
+    font-size: max(10px, 2vw);
 }
 
 #banner-content h1 {
@@ -470,7 +463,7 @@ Contact Me - styling
 
 #contact-form input, #contact-form textarea {
     display: block;
-    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-family: var(--font-Montserrat);
     font-size: 1em;
 }
 
@@ -492,8 +485,8 @@ Contact Me - styling
 }
 
 #contact-form input#send {
-    background-color: var(--color-navy);
-    border: 2px solid var(--color-navy);
+    background-color: var(--color-purple);
+    border: 2px solid var(--color-purple);
     border-radius: 3px;
     color: var(--color-white);
     cursor: pointer;
@@ -511,8 +504,9 @@ Contact Me - styling
 }
 
 #contact-form input#send:hover {
-    background-color: var(--color-dark-green);
-    border: 2px solid var(--color-dark-green);
+    background-color: var(--color-navy);
+    border: 2px solid var(--color-navy);
+    box-shadow: 3px 3px 4px var(--color-black-40-opacity);
     transition: all 0.4s ease-out 0s;
 }
 
@@ -521,7 +515,7 @@ Contact Me - styling
 }
 
 .contact-image .polaroid {
-    background-color: white;
+    background-color: var(--color-white);
     border: 1px solid var(--color-dark-gray);
     box-shadow: 5px 5px 10px var(--color-darkest-gray);
     padding: 10px 0;
@@ -580,7 +574,7 @@ footer {
 
 /*
 *
-Media Queries
+Media Queries - screen
 *
 */
 @media only screen and (max-width: 384px) {
@@ -589,8 +583,6 @@ Media Queries
     }
 
     .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
         width: 85%;
     }
 
@@ -605,25 +597,11 @@ Media Queries
     }
 
     .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
         width: 85%;
     }
 
     #contact-form textarea {
         width: 275px;
-    }
-}
-
-@media only screen and (max-width: 464px) {
-    #banner-content {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (min-width: 465px) and (max-width: 519px) {
-    #banner-content {
-        font-size: 2vw;
     }
 }
 
@@ -633,8 +611,6 @@ Media Queries
     }
 
     .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
         width: 80%;
     }
 
@@ -694,10 +670,6 @@ Media Queries
 
 /* Polaroid images only */
 @media only screen and (min-width: 520px) and (max-width: 768px) {
-    #banner-content {
-        font-size: 2vw;
-    }
-
     .about-me .polaroid {
         height: 250px;
         width: 215px;
@@ -813,6 +785,7 @@ Media Queries
 @media only screen and (min-width: 600px) and (max-width: 849px) {
     .nav-bar li a:hover {
         box-shadow: 3px 3px 4px var(--color-black-40-opacity);
+        transition: all 0.4s ease-out 0s;
     }
 
     #banner-content {
@@ -820,8 +793,6 @@ Media Queries
     }
 
     .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
         width: 75%;
     }
 
@@ -832,20 +803,13 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 769px) and (max-width: 849px) {
-    h2 {
-        font-size: 3vw;
-    }
-
     .nav-bar li {
         font-size: 2vw;
     }
 
     .nav-bar li a:hover {
         box-shadow: 3px 3px 4px var(--color-black-40-opacity);
-    }
-
-    #banner-content {
-        font-size: 2vw;
+        transition: all 0.4s ease-out 0s;
     }
 
     .socials {
@@ -911,12 +875,9 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 850px) {
-    h2 {
-        font-size: 3vw;
-    }
-
     .nav-bar li a:hover {
         box-shadow: 2px 2px 4px var(--color-black-40-opacity);
+        transition: all 0.4s ease-out 0s;
     }
 
     #banner-content {
@@ -924,8 +885,6 @@ Media Queries
     }
 
     .about-me, .my-skills, .my-projects, .contact {
-        margin-left: auto;
-        margin-right: auto;
         width: 70%;
     }
 
@@ -977,10 +936,6 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 850px) and (max-width: 1149px) {
-    #banner-content {
-        font-size: 2vw;
-    }
-
     #contact-form {
         margin-bottom: -345px;
     }
@@ -1000,10 +955,6 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 1150px) and (max-width: 1199px) {
-    #banner-content {
-        font-size: 2vw;
-    }
-
     .contact {
         display: flex;
     }
@@ -1020,10 +971,6 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 1200px) and (max-width: 1329px) {
-    #banner-content {
-        font-size: 2vw;
-    }
-
     .contact {
         display: flex;
     }
@@ -1040,10 +987,6 @@ Media Queries
 
 /* Polaroid images */
 @media only screen and (min-width: 1330px) {
-    #banner-content {
-        font-size: 2vw;
-    }
-
     .contact {
         display: flex;
     }
@@ -1055,5 +998,62 @@ Media Queries
 
     #mom-pic img {
         width: 300px;
+    }
+}
+
+
+/*
+*
+Media Queries - print
+*
+*/
+@media only print {
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
+
+    header {
+        position: static;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .about-me .polaroid {
+        float: left;
+        height: 250px;
+        width: 215px;
+    }
+
+    #kyle-selfie img {
+        width: 175px;
+    }
+
+    .my-skills {
+        display: flex;
+    }
+
+    .my-skills-images .polaroid {
+        height: 225px;
+        margin-left: 25px;
+        width: 215px;
+    }
+
+    #josie img, #bailey img {
+        width: 175px;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+    .contact .polaroid {
+        height: 355px;
+        width: 255px;
+    }
+
+    #mom-pic img {
+        width: 215px;
     }
 }
