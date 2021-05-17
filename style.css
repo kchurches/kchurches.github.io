@@ -452,13 +452,21 @@ Contact Me - styling
     text-transform: lowercase;
 }
 
-#contact-form span#req {
+#contact-form span.req {
     color: var(--color-red);
     display: inline-block;
 }
 
-#contact-form h4 {
+#contact-form span.req:after {
+    content: "\00a0";
+}
+
+#contact-form label {
     display: inline-block;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 800;
+    padding-bottom: 5px;
 }
 
 #contact-form input, #contact-form textarea {
