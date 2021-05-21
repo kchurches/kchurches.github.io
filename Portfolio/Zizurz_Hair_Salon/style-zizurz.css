@@ -332,6 +332,10 @@ footer p {
 
 
 /* News Page - styling */
+.news-main {
+    height: calc(100vh - 345px);
+}
+
 .news-page #news-header {
     padding-bottom: 40px;
     text-decoration: underline;
@@ -351,9 +355,9 @@ footer p {
     border-radius: 5px;
     padding: 10px;
     width: 300px;
-    position: relative;
-    bottom: 415px;
-    left: 650px;
+    position: absolute;
+    bottom: 80px;
+    left: 1100px;
 }
 
 #recent-news-box h4 {
