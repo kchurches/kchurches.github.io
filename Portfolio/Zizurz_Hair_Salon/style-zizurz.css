@@ -367,7 +367,7 @@ footer p {
 
 /* Contact Page - styling */
 #contact-body main {
-    height: 100vh;
+    height: calc(100vh - 345px);
 }
 
 .contact-page h4 {
