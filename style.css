@@ -1065,3 +1065,110 @@ Media Queries - print
         width: 215px;
     }
 }
+
+
+/************************************* Styling for JS projects *********************************/
+
+.JS-project {
+    color: var(--color-white);
+    height: calc(100vh - 80px);
+    padding-top: 80px;
+}
+
+.JS-project .title h2 {
+    background-color: var(--color-light-gray);
+    color: var(--color-navy);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.JS-background {
+    background-color: var(--color-purple);
+    padding: 40px 0;
+    height: calc(100vh - 200px);
+}
+
+.score-board {
+    border: 3px solid white;
+    border-radius: 4px;
+    font-size: 3em;
+    margin: 0 auto;
+    padding: 15px 20px;
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+.badge {
+    background-color: var(--color-light-green);
+    border-radius: 2px;
+    font-size: 0.35em;
+    padding: 2px 10px;
+}
+
+#user-label {
+    position: absolute;
+    left: -30px;
+    top: 34px;
+}
+
+#comp-label {
+    position: absolute;
+    right: -35px;
+    top: 34px;
+}
+
+.result {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.choices {
+    text-align: center;
+}
+
+.choice {
+    border: 4px solid var(--color-white);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.choice:hover {
+    background-color: var(--color-navy);
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+}
+
+.JS-project img {
+    height: 150px;
+}
+
+.green-glow {
+    border: 4px solid #4dcc7d;
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.red-glow {
+    border: 4px solid #fc121b;
+    box-shadow: 0 0 10px #d01115;
+}
+
+.gray-glow {
+    border: 4px solid #464647;
+    box-shadow: 0 0 10px #25292b;
+}
+
+#action-message {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#action-message p {
+    font-size: 1.5em;
+    text-align: center;
+}
