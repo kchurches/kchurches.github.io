@@ -1,29 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title>About - Zizurz Salon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link href="./style-zizurz.css" type="text/css" rel="stylesheet">
+
+        <title>About - Zizurz Salon</title>
         
     </head>
+
     <body>
+
         <header>
-            <h1 class="Arimo uppercase"><span>Zizurz</span></h1>
-            <nav>
-                <ul class="Arimo uppercase">
-                    <li><a href="home.html"><span>Home</span></a></li>
-                    <li><a href="about.html" class="active-page"><span>About</span></a></li>
-                    <li><a href="hairstyles.html"><span>Hairstyles</span></a></li>
-                    <li><a href="news.html"><span>News</span></a></li>
-                    <li><a href="contact.html"><span>Contact</span></a></li>
-                </ul>
-            </nav>
+
+            <div class="nav-container">
+
+                <div class="logo">
+                    <h1 class="Arimo uppercase">Zizurz</h1>
+                </div>
+
+                <nav class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+                    <ul class="Arimo uppercase nav-menu">
+                        <li><a href="./home.html" class="nav-links"><span>Home</span></a></li>
+                        <li><a href="./about.html" class="active-page nav-links"><span>About</span></a></li>
+                        <li><a href="./hairstyles.html" class="nav-links"><span>Hairstyles</span></a></li>
+                        <li><a href="./news.html" class="nav-links"><span>News</span></a></li>
+                        <li><a href="./contact.html" class="nav-links"><span>Contact</span></a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
         </header>
         
         <main role="main">
+
             <div class="about-page">
+
                 <h4>About Us</h4>
 
                 <h5>We Have Free Templates for Everyone</h5>
@@ -44,20 +68,27 @@
                 </p>
 
             </div>
+
         </main>
 
         <footer>
+
             <p>&#169 copyright 2021 | all rights reserved.</p>
 
-            <div id="socials">
-                <span>
+            <div class="socials-container">
+
+                <div class="socials">
                     <a href="#"><img src="./Images/icon-twitter2.png" alt="Twitter icon"></a>
                     <a href="#"><img src="./Images/icon-facebook.png" alt="Facebook icon"></a>
                     <a href="#"><img src="./Images/googleplus.png" alt="Google Plus icon"></a>
                     <a href="#"><img src="./Images/pinterest.png" alt="Pinterest icon"></a>
-                </span>
+                </div>
+
             </div>
+
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
