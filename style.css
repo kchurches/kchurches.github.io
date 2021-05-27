@@ -112,6 +112,7 @@ img, embed, object, video {
 body {
     color: var(--color-navy);
     font-family: var(--font-Montserrat);
+    min-width: 300px;
     width: 100%;
 }
 
@@ -161,8 +162,8 @@ header {
     background-color: var(--color-medium-gray-75-opacity);
     font-weight: 800;
     height: 80px;
-    min-width: 300px;
     position: fixed;
+    min-width: 300px;
     width: 100%;
     z-index: 99;
 }
@@ -235,7 +236,6 @@ Footer - styling
 footer {
     background-color: var(--color-dark-green);
     height: 80px;
-    min-width: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -354,7 +354,6 @@ About Me - styling
 .about-me {
     background-color: var(--color-light-gray);
     margin: 0 auto 20px auto;
-    min-width: 300px;
     padding: 20px;
 }
 
@@ -399,7 +398,6 @@ My Skills - styling
 .my-skills {
     background-color: var(--color-gray);
     margin: 0 auto 20px auto;
-    min-width: 300px;
     padding: 20px;
 }
 
@@ -452,7 +450,6 @@ My Projects - styling
 .my-projects {
     background-color: var(--color-light-gray);
     margin: 0 auto 20px auto;
-    min-width: 300px;
     padding: 20px;
 }
 
@@ -484,7 +481,6 @@ Contact Me - styling
 .contact {
     background-color: var(--color-gray);
     margin: 0 auto;
-    min-width: 300px;
     padding: 20px;
 }
 
@@ -664,10 +660,6 @@ Contact Me - styling
     background-color: var(--color-navy);
     cursor: pointer;
     transition: all 0.4s ease-out 0s;
-}
-
-.RPS-project img:visited {
-    background-color: var(--color-purple);
 }
 
 .green-glow {
