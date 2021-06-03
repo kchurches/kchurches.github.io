@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-freeeze.css" type="text/css" rel="stylesheet">
+
+        <title>About - Freeeze Frozen Yogurt</title>
         
     </head>
 
@@ -13,25 +16,54 @@
 
         <header class="Lato">
 
-            <div class="header-content">
-                <a href="home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+            <div class="header-content nav-container">
 
-                <nav>
-                    <ul class="uppercase">
-                        <li><a href="home.html">home</a></li>
-                        <li><a href="about.html" class="active-page">about</a>
-                            <ul id="dropdown-products">
-                                <li><a href="products.html">products</a></li>
+                <a href="./home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+
+                <nav role="navigation" class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+                        
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="uppercase nav-menu">
+
+                        <li><a href="./home.html" class="nav-links" id="nav-home">home</a></li>
+
+                        <li><a href="./about.html" class="active-page nav-links" id="nav-about">about</a>
+
+                            <ul id="dropdown-about">
+
+                                <li><a href="./products.html" class="nav-links large-screen-dropdown">products</a></li>
+
+                                <li><a href="./products.html" class="nav-links small-screen-dropdown">about - products</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="blog.html">blog</a>
+
+                        <li><a href="./blog.html" class="nav-links">blog</a>
+
                             <ul id="dropdown-blog">
-                                <li><a href="single-post.html">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links large-screen-dropdown">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links small-screen-dropdown">blog - single post</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="contact.html">contact</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+                        
                     </ul>
+
                 </nav>
+
             </div>
 
         </header>
@@ -39,23 +71,27 @@
         <main role="main">
 
             <div class="about-page">
-                <div id="about-banner">
+
+                <div class="about-banner">
                     <h1 class="uppercase Lato">about</h1>
                 </div>
 
-                <div id="about-picture">
+                <div class="about-picture">
                     <img src="./Images/bg-header-about.jpg" alt="zoomed in picture of raspberries on yogurt">
                 </div>
 
                 <div class="about-text">
-                    <div id="community-box">
+
+                    <div class="community-box">
                         <h2 class="uppercase Lato">be part of our community</h2>
                             <br>
                         <p>If you’re experiencing issues or having concerns about this website template, join the discussion on our forum and meet other people in the community who share the same interests.</p>
                     </div>
 
-                    <div id="about-main-content">
+                    <div class="about-main-content">
+
                         <h2 class="uppercase Lato">we have free templates for everyone</h2>
+
                         <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them.
                             <br>
                             <br>
@@ -72,8 +108,11 @@
                             <br>
                             <br>
                         Website Template design by Free Website Templates.</p>
+
                     </div>
+
                 </div>
+
             </div>
 
         </main>
@@ -93,9 +132,12 @@
                 </div>
                 
                 <p>&#169 2021 Freeeze. All Rights Reserved.</p>
+
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
