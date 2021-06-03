@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-freeeze.css" type="text/css" rel="stylesheet">
+
+        <title>Blog - Freeeze Frozen Yogurt</title>
         
     </head>
 
@@ -13,77 +16,126 @@
 
         <header class="Lato">
 
-            <div class="header-content">
-                <a href="home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+            <div class="header-content nav-container">
 
-                <nav>
-                    <ul class="uppercase">
-                        <li><a href="home.html">home</a></li>
-                        <li><a href="about.html">about</a>
-                            <ul id="dropdown-products">
-                                <li><a href="products.html">products</a></li>
+                <a href="./home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+
+                <nav role="navigation" class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+
+                    <ul class="uppercase nav-menu">
+
+                        <li><a href="./home.html" class="nav-links" id="nav-home">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links" id="nav-about">about</a>
+
+                            <ul id="dropdown-about">
+
+                                <li><a href="./products.html" class="nav-links large-screen-dropdown">products</a></li>
+
+                                <li><a href="./products.html" class="nav-links small-screen-dropdown">about - products</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="blog.html" class="active-page">blog</a>
+
+                        <li><a href="./blog.html" class="active-page nav-links">blog</a>
+
                             <ul id="dropdown-blog">
-                                <li><a href="single-post.html">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links large-screen-dropdown">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links small-screen-dropdown">blog - single post</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="contact.html">contact</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+                        
                     </ul>
+
                 </nav>
+
             </div>
 
         </header>
 
-        <main role="main">
+        <main role="main" class="blog-main">
+
+            <div class="blog-banner">
+                <h1 class="uppercase Lato">blog</h1>
+            </div>
 
             <div class="blog-page">
-                <div id="blog-banner">
-                    <h1 class="uppercase Lato">blog</h1>
-                </div>
                 
-                <div class="blog-grid">
-                    <div id="top-blog-pic">
-                        <img src="./Images/new-chills.png" alt="granola with fruit">
+                <div class="recent-blogs">
+
+                    <div class="top-blog">
+
+                        <div id="top-blog-pic">
+                            <img src="./Images/new-chills.png" alt="granola with fruit">
+                        </div>
+
+                        <div id="top-blog-content">
+                            <h2 class="uppercase Lato">new chills for summer</h2>
+
+                            <p class="by-line">By Admin on April 28, 2021</p>
+                            <br>
+                            <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
+                            <br>
+
+                            <div class="button read-more-button uppercase Lato"><a href="./single-post.html">read more</a></div>
+                        </div>
+
                     </div>
 
-                    <div id="top-blog">
-                        <h2 class="uppercase Lato">new chills for summer</h2>
-                        <p class="by-line">By Admin on November 28, 2021</p>
-                        <br>
-                        <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
-                        <br>
-                        <div class="read-more-button uppercase Lato"><a href="single-post.html">read more</a></div>
+                    <div class="bottom-blog">
+
+                        <div id="bottom-blog-pic">
+                            <img src="./Images/berries.png" alt="yogurt with fruit and garnish">
+                        </div>
+
+                        <div id="bottom-blog-content">
+                            <h2 class="uppercase Lato">berries on the grove</h2>
+
+                            <p class="by-line">By Admin on June 4, 2021</p>
+                            <br>
+                            <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
+                            <br>
+
+                            <div class="button read-more-button uppercase Lato"><a href="./single-post.html">read more</a></div>
+                        </div>
+
                     </div>
 
-                    <div id="bottom-blog-pic">
-                        <img src="./Images/berries.png" alt="yogurt with fruit and garnish">
-                    </div>
-
-                    <div id="bottom-blog">
-                        <h2 class="uppercase Lato">berries on the grove</h2>
-                        <p class="by-line">By Admin on December 4, 2021</p>
-                        <br>
-                        <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.</p>
-                        <br>
-                        <div class="read-more-button uppercase Lato"><a href="single-post.html">read more</a></div>
-                    </div>
-
-                    <div id="recent-posts">
-                        <h1 class="Magra">Recent Posts</h1>
-                        <img src="./Images/on-diet.png" alt="granola with kiwi">
-                        <h2 class="uppercase Lato">on the diet</h2>
-                        <p class="by-line">By Admin on November 14, 2021</p>
-                        <br>
-                        <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
-                        <br>
-                        <div class="read-more-button uppercase Lato"><a href="single-post.html">read more</a></div>
-                    </div>
-
-                    <div id="load-more-button" class="uppercase Lato"><a href="#">load more</a></div>
                 </div>
+
+                <div class="recent-posts">
+                    <h1 class="Magra">Recent Posts</h1>
+
+                    <img src="./Images/on-diet.png" alt="granola with kiwi">
+
+                    <h2 class="uppercase Lato">on the diet</h2>
+                    
+                    <p class="by-line">By Admin on April 4, 2021</p>
+                    <br>
+                    <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
+                    <br>
+
+                    <div class="button read-more-button uppercase Lato"><a href="./single-post.html">read more</a></div>
+                </div>
+
             </div>
+
+            <div id="load-more-button" class="button uppercase Lato"><a href="#">load more</a></div>
 
         </main>
 
@@ -102,9 +154,12 @@
                 </div>
                 
                 <p>&#169 2021 Freeeze. All Rights Reserved.</p>
+
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
