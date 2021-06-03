@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-freeeze.css" type="text/css" rel="stylesheet">
+
+        <title>Home - Freeeze Frozen Yogurt</title>
         
     </head>
 
@@ -13,63 +16,100 @@
 
         <header class="Lato">
 
-            <div class="header-content">
-                <a href="home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+            <div class="header-content nav-container">
 
-                <nav>
-                    <ul class="uppercase">
-                        <li><a href="home.html" class="active-page">home</a></li>
-                        <li><a href="about.html">about</a>
-                            <ul id="dropdown-products">
-                                <li><a href="products.html">products</a></li>
+                <a href="./home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+
+                <nav role="navigation" class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="uppercase nav-menu">
+
+                        <li><a href="./home.html" class="active-page nav-links" id="nav-home">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links" id="nav-about">about</a>
+
+                            <ul id="dropdown-about">
+
+                                <li><a href="./products.html" class="nav-links large-screen-dropdown">products</a></li>
+
+                                <li><a href="./products.html" class="nav-links small-screen-dropdown">about - products</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="blog.html">blog</a>
+
+                        <li><a href="./blog.html" class="nav-links">blog</a>
+                            
                             <ul id="dropdown-blog">
-                                <li><a href="single-post.html">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links large-screen-dropdown">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links small-screen-dropdown">blog - single post</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="contact.html">contact</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+                        
                     </ul>
+
                 </nav>
+
             </div>
 
         </header>
 
         <main role="main">
 
-            <div id="banner-content">
-                <img src="./Images/bg-home.jpg" alt="frozen yogurt">
+            <div class="banner-content">
 
-                <div id="delight">
-                    <img src="./Images/circles.png" alt="red circle over green circle" id="delight-circles">
+                <img src="./Images/bg-home.jpg" alt="frozen yogurt with fruit">
 
-                    <a href="product.html"><h2 class="uppercase" id="delight-text">freeze<br>delight</h2></a>
+                <div class="delight">
+                    <img src="./Images/my%20images/circles.png" alt="red circle over green circle">
+
+                    <a href="./products.html"><h2 class="uppercase">freeze<br>delight</h2></a>
                 </div>
+
             </div>
 
-            <div id="new-product-box">
-                <div id="new-product-content">
-                    <div id="new-product-text">
+            <div class="new-product-box">
+
+                <div class="new-product-content">
+
+                    <div class="new-product-text">
                         <h3 class="uppercase">new product</h3>
                         <h1 class="Magra">The Twist of Healthy Yogurt</h1>
                         <p>This website template has been designed by freewebsitetemplates.com for you, for free.<br>You can replace all this text with your own text.</p>
                     </div>
 
                     <img src="./Images/yogurt.jpg" alt="frozen yogurt">
+
                 </div>
+
             </div>
 
             <div class="uppercase" id="icons-box">
+
                 <div class="Lato" id="icons-content">
-                    <a href="products.html"><img src="./Images/small-yogurt.png" alt="yogurt"><h2>products</h2></a>
+                    <a href="./products.html"><img src="./Images/small-yogurt.png" alt="yogurt"><h2>products</h2></a>
 
-                    <a href="about.html"><img src="./Images/hands.png" alt="open hands"><h2>our story</h2></a>
+                    <a href="./about.html"><img src="./Images/my%20images/icons/hands.png" alt="open hands"><h2>our story</h2></a>
 
-                    <a href="products.html"><img src="./Images/fruit.png" alt="pear"><h2>flavors</h2></a>
+                    <a href="./products.html"><img src="./Images/fruit.png" alt="pear"><h2>flavors</h2></a>
 
-                    <a href="contact.html"><img src="./Images/location.png" alt="location marker"><h2>our location</h2></a>
+                    <a href="./contact.html"><img src="./Images/location.png" alt="location marker"><h2>our location</h2></a>
                 </div>
+
             </div>
 
         </main>
@@ -89,9 +129,12 @@
                 </div>
                 
                 <p>&#169 2021 Freeeze. All Rights Reserved.</p>
+
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
