@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-freeeze.css" type="text/css" rel="stylesheet">
+
+        <title>Contact - Freeeze Frozen Yogurt</title>
         
     </head>
 
@@ -13,25 +16,54 @@
 
         <header class="Lato">
 
-            <div class="header-content">
-                <a href="home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+            <div class="header-content nav-container">
 
-                <nav>
-                    <ul class="uppercase">
-                        <li><a href="home.html">home</a></li>
-                        <li><a href="about.html">about</a>
-                            <ul id="dropdown-products">
-                                <li><a href="products.html">products</a></li>
+                <a href="./home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+
+                <nav role="navigation" class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+                        
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="uppercase nav-menu">
+
+                        <li><a href="./home.html" class="nav-links" id="nav-home">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links" id="nav-about">about</a>
+
+                            <ul id="dropdown-about">
+
+                                <li><a href="./products.html" class="nav-links large-screen-dropdown">products</a></li>
+
+                                <li><a href="./products.html" class="nav-links small-screen-dropdown">about - products</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="blog.html">blog</a>
+
+                        <li><a href="./blog.html" class="nav-links">blog</a>
+
                             <ul id="dropdown-blog">
-                                <li><a href="single-post.html">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links large-screen-dropdown">single post</a></li>
+
+                                <li><a href="./single-post.html" class="nav-links small-screen-dropdown">blog - single post</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="contact.html" class="active-page">contact</a></li>
+
+                        <li><a href="./contact.html" class="active-page nav-links">contact</a></li>
+
                     </ul>
+
                 </nav>
+
             </div>
 
         </header>
@@ -39,46 +71,65 @@
         <main role="main">
 
             <div class="contact-page">
-                <div id="contact-banner">
+
+                <div class="contact-banner">
                     <h1 class="uppercase Lato">contact</h1>
                 </div>
 
-                <div class="gray-bg">
-                    <div class="map-banner">
+                <div class="map">
+
+                    <div id="map-img">
+
                         <img src="./Images/map.jpg" alt="map depicting location of Freeeze Frozen Yogurt">
 
-                        <div id="map-overlay">
-                            <img src="./Images/check-in.png" alt="location icon">
-
-                            <div id="map-text">
-                                <h2 class="uppercase Lato">unit 0123, abc building, bussiness park</h2>
-                                <p>If you're having problems editing this website template, then don't hesitate to ask<br>for help on the Forums.</p>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
 
-                <div class="feedback-grid">
-                    <div id="inquiry-form">
+                <div class="map-overlay">
+
+                    <div class="map-banner">
+                        <img src="./Images/check-in.png" alt="location icon">
+
+                        <div class="map-text">
+                            <h2 class="uppercase Lato">unit 0123, abc building, business park</h2>
+                            <p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-content">
+
+                    <div class="inquiry-form">
+
                         <h2 class="uppercase Lato">inquiry form</h2>
 
-                        <div id="inquiry-grid">
-                            <form action="home.html" method="POST">
-                                <input type="text" name="Name" placeholder="Name">
-                                <input type="text" name="Email" placeholder="Email">
-                                <input type="text" name="Subject" placeholder="Subject">
-                                <textarea name="Message" cols="50" row="7" placeholder="Share your thoughts."></textarea>
-                                <input type="submit" value="Send" id="send" class="uppercase Lato">
-                            </form>
-                        </div>
+                        <form action="./home.html" method="POST">
+
+                            <input type="text" name="Name" placeholder="Name">
+
+                            <input type="text" name="Email" placeholder="Email">
+
+                            <input type="text" name="Subject" placeholder="Subject">
+
+                            <textarea name="Message" cols="50" row="7" placeholder="Share your thoughts."></textarea>
+
+                            <input type="submit" value="Send" id="send" class="button uppercase Lato">
+
+                        </form>
                     </div>
 
-                    <div id="hear-from-you">
+                    <div class="hear-from-you">
+
                         <h2 class="uppercase Lato">we'd love to hear from you.</h2>
-                        <p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
-                    </div>
-                </div>
 
+                        <p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
+                        
+                    </div>
+
+                </div>
 
             </div>
 
@@ -99,9 +150,12 @@
                 </div>
                 
                 <p>&#169 2021 Freeeze. All Rights Reserved.</p>
+
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
