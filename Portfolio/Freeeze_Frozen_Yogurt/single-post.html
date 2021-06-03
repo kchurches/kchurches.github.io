@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-freeeze.css" type="text/css" rel="stylesheet">
+
+        <title>Blog Post - Freeeze Frozen Yogurt</title>
         
     </head>
 
@@ -13,25 +16,54 @@
 
         <header class="Lato">
 
-            <div class="header-content">
-                <a href="home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+            <div class="header-content nav-container">
 
-                <nav>
-                    <ul class="uppercase">
-                        <li><a href="home.html">home</a></li>
-                        <li><a href="about.html">about</a>
-                            <ul id="dropdown-products">
-                                <li><a href="products.html">products</a></li>
+                <a href="./home.html"><img src="./Images/logo.png" alt="Freeeze Frozen Yogurt logo"></a>
+
+                <nav role="navigation" class="nav-bar">
+
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+
+
+                    <ul class="uppercase nav-menu">
+
+                        <li><a href="./home.html" class="nav-links" id="nav-home">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links" id="nav-about">about</a>
+
+                            <ul id="dropdown-about">
+
+                                <li><a href="./products.html" class="nav-links large-screen-dropdown">products</a></li>
+
+                                <li><a href="./products.html" class="nav-links small-screen-dropdown">about - products</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="blog.html">blog</a>
+
+                        <li><a href="./blog.html" class="nav-links">blog</a>
+
                             <ul id="dropdown-blog">
-                                <li><a href="single-post.html" class="active-page">single post</a></li>
+
+                                <li><a href="./single-post.html" class="active-page nav-links large-screen-dropdown">single post</a></li>
+
+                                <li><a href="./single-post.html" class="active-page nav-links small-screen-dropdown">blog - single post</a></li>
+
                             </ul>
+
                         </li>
-                        <li><a href="contact.html">contact</a></li>
+                        
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+                        
                     </ul>
+
                 </nav>
+
             </div>
 
         </header>
@@ -39,36 +71,45 @@
         <main role="main">
 
             <div class="single-post-page">
-                <div id="single-post-banner">
+
+                <div class="single-post-banner">
                     <h1 class="uppercase Lato">single post</h1>
                 </div>
 
-                <div class="single-post-grid">
+                <div class="single-post-layout">
 
-                    <div id="single-post-blog">
+                    <div class="single-post-blog">
                         <img src="./Images/strwberry-delights.jpg" alt="berries on granola cereal">
 
                         <h2 class="uppercase Lato">new chills for summer</h2>
-                        <p class="by-line">By Admin on November 28, 2021</p>
+
+                        <p class="by-line">By Admin on May 3, 2021</p>
+
                         <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the forum.
                         <br>
                         <br>
                         You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the forum.</p>
 
-                        <div id="back-button" class="uppercase Lato"><a href="blog.html">back to blog</a></div>
+                        <div class="button uppercase Lato"><a href="./blog.html">back to blog</a></div>
                     </div>
 
-                    <div id="recent-posts">
+                    <div class="recent-posts">
                         <h1 class="Magra">Recent Posts</h1>
+    
                         <img src="./Images/on-diet.png" alt="granola with kiwi">
+    
                         <h2 class="uppercase Lato">on the diet</h2>
-                        <p class="by-line">By Admin on November 14, 2021</p>
+                        
+                        <p class="by-line">By Admin on April 4, 2021</p>
                         <br>
                         <p class="blog-text">You can replace all this text with your own text. You can remove any link to our website from this website template.</p>
                         <br>
-                        <div class="read-more-button uppercase Lato"><a href="single-post.html">read more</a></div>
+    
+                        <div class="button read-more-button uppercase Lato"><a href="./single-post.html">read more</a></div>
                     </div>
+
                 </div>
+
             </div>
 
         </main>
@@ -88,9 +129,12 @@
                 </div>
                 
                 <p>&#169 2021 Freeeze. All Rights Reserved.</p>
+
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
