@@ -210,9 +210,11 @@ Home Page
 .banner-content {
     margin: 0 auto;
     width: 1126px;
-    display: flex;
 }
 
+.banner-content img {
+    width: 100%;
+}
 
 .delight {
     position: absolute;
@@ -625,7 +627,6 @@ Contact Page - styling
 .map-text {
     color: #7A6666;
     font-size: 0.75em;
-    line-height: 1.75em;
 }
 
 .contact-content {
@@ -667,6 +668,9 @@ Contact Page - styling
     padding: 10px;
     text-align: center;
     width: 175px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .inquiry-form form input#send:hover {
@@ -703,20 +707,30 @@ Media Queries - screen
 
 @media only screen and (max-width: 529px) {
     .delight img {
-        width: 65%;
+        width: 100px;
     }
 
     .delight h2 {
-        font-size: 3vw;
+        font-size: 1em;
         position: relative;
         bottom: 75px;
         left: 25px;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
+    .map-overlay {
+        position: relative;
+        bottom: 245px;
+    }
+
     .map-text {
         font-size: 0.7em;
+        text-align: center;
+    }
+
+    .contact-content {
+        margin: -209px auto 0 auto;
     }
 }
 
@@ -884,13 +898,14 @@ Media Queries - screen
     }
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 899px) {
     .map-overlay {
         position: relative;
         bottom: 249px;
     }
 
     .map-text {
+        line-height: 1.5em;
         text-align: center;
     }
 
@@ -941,6 +956,7 @@ Media Queries - screen
     }
 
     .map-text {
+        line-height: 1.75em;
         text-align: center;
     }
 
