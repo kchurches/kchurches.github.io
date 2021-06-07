@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title>RNRNR Running - Blog - Aside from Running</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-RNRNR.css" type="text/css" rel="stylesheet">
+
+        <title>RNRNR Running - Blog - Aside from Running</title>
         
     </head>
 
@@ -13,19 +16,34 @@
 
         <header>
 
-            <div class="header-content">
+            <div class="nav-container">
 
                 <a href="./home.html"><img src="./Images/logo.png" alt="RNRNR logo"></a>
 
-                <nav>
+                <nav role="navigation" class="nav-bar">
 
-                    <ul class="uppercase Arial-Black">
-                        <li><a href="./home.html">home</a></li>
-                        <li><a href="./about.html">about</a></li>
-                        <li><a href="./running.html">running</a></li>
-                        <li><a href="./blog.html" class="active-page">blog</a></li>
-                        <li><a href="./contact.html">contact</a></li>
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span> 
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="nav-menu uppercase Arial-Black">
+
+                        <li><a href="./home.html" class="nav-links">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links">about</a></li>
+
+                        <li><a href="./running.html" class="nav-links">running</a></li>
+                        
+                        <li><a href="./blog.html" class="nav-links active-page">blog</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+
                     </ul>
+
                 </nav>
 
             </div>
@@ -38,7 +56,7 @@
 
                 <div class="individual-blog-overlay">
 
-                    <h3 class="uppercase Arial-Black">Aside from Running</h3>
+                    <h3 class="section-head uppercase Arial-Black">Aside from Running</h3>
 
                     <hr class="pink-hr">
 
@@ -77,6 +95,8 @@
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
