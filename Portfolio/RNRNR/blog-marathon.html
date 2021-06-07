@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title>RNRNR Running - Blog - Preparing for a Marathon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-RNRNR.css" type="text/css" rel="stylesheet">
+
+        <title>RNRNR Running - Blog</title>
         
     </head>
 
@@ -13,19 +16,34 @@
 
         <header>
 
-            <div class="header-content">
+            <div class="nav-container">
 
                 <a href="./home.html"><img src="./Images/logo.png" alt="RNRNR logo"></a>
 
-                <nav>
+                <nav role="navigation" class="nav-bar">
 
-                    <ul class="uppercase Arial-Black">
-                        <li><a href="./home.html">home</a></li>
-                        <li><a href="./about.html">about</a></li>
-                        <li><a href="./running.html">running</a></li>
-                        <li><a href="./blog.html" class="active-page">blog</a></li>
-                        <li><a href="./contact.html">contact</a></li>
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span> 
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="nav-menu uppercase Arial-Black">
+
+                        <li><a href="./home.html" class="nav-links">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links">about</a></li>
+
+                        <li><a href="./running.html" class="nav-links">running</a></li>
+                        
+                        <li><a href="./blog.html" class="nav-links active-page">blog</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+
                     </ul>
+
                 </nav>
 
             </div>
@@ -34,21 +52,89 @@
 
         <main role="main">
 
-            <div class="black-overlay">
+            <div class="blog-overlay black-overlay">
+                
+                <h3 class="section-head uppercase Arial-Black">blog</h3>
 
-                <div class="individual-blog-overlay">
+                <hr class="pink-hr">
 
-                    <h3 class="uppercase Arial-Black">Preparing for a Marathon</h3>
+                <div class="blog-marathon">
 
-                    <hr class="pink-hr">
+                    <div class="blog-img">
 
-                    <img src="./Images/blog-image1.png" alt="Sweating woman">
+                        <img src="./Images/blog-image1.png" alt="Sweating woman">
 
-                    <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the Terms of Use. You can even remove all our links if you want.</p>
+                    </div>
 
-                    <p>Looking for more templates? Just browse through all our Free Website Templates and find what you’re looking for. But if you don’t find any website template you can use, you can try our Free Web Design service and tell us all about it. Maybe you’re looking for something different, something special.</p>
+                    <div class="blog-content">
+                        
+                        <h4 class="uppercase">preparing for a marathon</h4>
 
-                    <p>And we love the challenge of doing something different and something special. If you’re experiencing issues and concerns about this website template, join the discussion on our forum and meet other people in the community who share the same interests with you. Version 1. Website Template details, discussion and updates for this RNRNR Template.</p>
+                        <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
+
+                        <a href="./blog-marathon.html" class="uppercase">keep reading</a>
+
+                    </div>
+
+                </div>
+
+                <div class="blog-running">
+
+                    <div class="blog-img">
+
+                        <img src="./Images/blog-image2.png" alt="Woman kickboxing">
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h4 class="uppercase">aside from running</h4>
+
+                        <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
+
+                        <a href="./blog-running.html" class="uppercase">keep reading</a>
+
+                    </div>
+
+                </div>
+
+                <div class="blog-winning">
+
+                    <div class="blog-img">
+
+                        <img src="./Images/blog-image3.png" alt="Man working out">
+
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h4 class="uppercase">winning is everything</h4>
+
+                        <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
+
+                        <a href="./blog-winning.html" class="uppercase">keep reading</a>
+
+                    </div>
+
+                </div>
+
+                <div class="blog-crossfit">
+
+                    <div class="blog-img">
+
+                        <img src="./Images/blog-image4.png" alt="Man clapping">
+                        
+                    </div>
+
+                    <div class="blog-content">
+
+                        <h4 class="uppercase">running and crossfit</h4>
+
+                        <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
+
+                        <a href="./blog-crossfit.html" class="uppercase">keep reading</a>
+
+                    </div>
 
                 </div>
 
@@ -77,6 +163,8 @@
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
