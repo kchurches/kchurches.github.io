@@ -1,11 +1,25 @@
+/*
+*
+General Tag - styling
+*
+*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html, body, main {
+    width: 100%;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
 body {
     font-family: Arial;
+    min-width: 300px;
 }
 
 main {
@@ -26,8 +40,14 @@ ul {
 .black-overlay {
     background-color: rgba(0, 0, 0, .85);
     margin: 0 auto;
+    max-width: 1000px;
     text-align: center;
-    width: 1000px;
+}
+
+.section-head {
+    color: rgba(251, 65, 111, 1);
+    font-size: max(30px, 2.5vw);
+    padding: 40px 0 20px 0;
 }
 
 .pink-hr {
@@ -41,7 +61,11 @@ ul {
 }
 
 
-/* Fonts - styling */
+/*
+*
+Fonts
+*
+*/
 .Arial-Black {
     font-family: 'Arial Black';
 }
@@ -51,60 +75,74 @@ ul {
 }
 
 
-/* Header - styling */
+/*
+*
+Header & Mobile nav Hamburger Menu - styling
+*
+*/
 header {
     background-color: rgba(255, 255, 255, 1);
     border-bottom: 2px solid rgba(0, 0, 0, 1);
     height: 225px;
 }
 
-header ul {
+.nav-container {
+    height: 225px;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nav-container img {
+    display: inline-block;
+}
+
+.nav-bar {
+    display: inline-block;
+}
+
+.nav-bar ul {
     font-size: 0.85em;
 }
 
-header ul a:hover {
+.nav-bar ul a:hover {
     color: rgba(22, 171, 136, 1);
 }
 
-header ul li {
-    display: inline-block;
-    padding: 20px;
+.menu-toggle .bar {
+    background-color: rgba(28, 28, 28, .85);
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.4s ease-out 0s;
+    width: 25px;
 }
 
-header img {
-    display: inline-block;
-    padding-top: 45px;
-}
-
-nav {
-    float: right;
-    padding-top: 80px;
-}
-
-.header-content {
-    margin: 0 auto;
-    width: 1000px;
-}
-
-.active-page {
+.nav-bar ul a.active-page {
     color: rgba(251, 65, 111, 1);
 }
 
-.active-page:hover {
+.nav-bar ul a.active-page:hover {
     color: rgba(251, 65, 111, 1);
 }
 
 
-/* Home Page - Banner - styling */
+/*
+*
+Home Page - styling
+*
+*/
 .home-banner-content {
     margin: 0 auto;
+    max-width: 1000px;
     padding: 50px;
     text-align: center;
-    width: 1000px;
 }
 
 .home-banner-content h1 {
-    font-size: 6em;
+    font-size: max(40px, 5vw);
     line-height: 0.85em;
     margin-bottom: 50px;
 }
@@ -112,14 +150,12 @@ nav {
 .home-banner-content a {
     border: 5px solid rgba(0, 0, 0, 1);
     display: inline-block;
-    font-size: 1.25em;
+    font-size: max(15px, 1vw);
     font-weight: bold;
     margin-bottom: 50px;
     padding: 10px 30px;
 }
 
-
-/* Home Page - Pink Overlay - styling */
 .home-overlay-background {
     background-color: rgba(251, 65, 111, .8);
     height: 480px;
@@ -128,12 +164,12 @@ nav {
 .home-overlay-content {
     color: rgba(255, 255, 255, 1);
     margin: 0 auto;
+    max-width: 1000px;
     text-align: center;
-    width: 1000px;
 }
 
 .home-overlay-content h3 {
-    font-size: 2.5em;
+    font-size: max(25px, 2.5vw);
     padding-top: 40px;
 }
 
@@ -146,16 +182,16 @@ nav {
 }
 
 .home-overlay-content p {
-    font-size: 1.5em;
+    font-size: max(20px, 1.25vw);
     line-height: 2.15em;
     margin: 0 auto;
-    width: 600px;
+    max-width: 600px;
 }
 
 .home-overlay-content a {
     border: 5px solid rgba(255, 255, 255, 1);
     color: rgba(255, 255, 255, 1);
-    font-size: 1.25em;
+    font-size: max(15px, 1vw);
     font-weight: bold;
     padding: 10px 30px;
 }
@@ -166,13 +202,11 @@ nav {
 }
 
 
-/* About Page */
-.about-overlay h3 {
-    color: rgba(251, 65, 111, 1);
-    font-size: 2.5em;
-    padding: 40px 0 20px 0;
-}
-
+/*
+*
+About Page
+*
+*/
 .about-overlay hr {
     margin: 0 auto 20px auto;
 }
@@ -185,7 +219,7 @@ nav {
     color: rgba(255, 255, 255, 1);
     line-height: 2.15em;
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
 }
 
 .about-overlay h4 {
@@ -197,13 +231,11 @@ nav {
 }
 
 
-/* Running Page - styling */
-.running-overlay h3 {
-    color: rgba(251, 65, 111, 1);
-    font-size: 2.5em;
-    padding: 40px 0 20px 0;
-}
-
+/*
+*
+Running Page - styling 
+*
+*/
 #running-top-hr {
     margin: 0 auto 20px auto;
 }
@@ -220,11 +252,11 @@ nav {
     color: rgba(255, 255, 255, 1);
     line-height: 2.15em;
     margin: 0 auto;
-    width: 700px;
+    max-width: 700px;
 }
 
 .running-overlay h5 {
-    font-size: 1.75em;
+    font-size: max(25px, 1.5vw);
 }
 
 .running-overlay p {
@@ -232,125 +264,111 @@ nav {
 }
 
 
-/* Blog Page - styling */
-.blog-overlay h3 {
-    color: rgba(251, 65, 111, 1);
-    font-size: 2.5em;
-    padding: 40px 0 20px 0;
-}
-
+/*
+*
+Blog Page - styling
+*
+*/
 .blog-overlay hr {
     margin: 0 auto 40px auto;
 }
 
-.blog-overlay h4, .blog-overlay p, .blog-overlay a {
+.blog-marathon, .blog-running, .blog-winning, .blog-crossfit {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog-marathon, .blog-running, .blog-winning {
+    border-bottom: 1px solid rgba(211, 211, 211, .4);
+}
+
+.blog-running, .blog-winning, .blog-crossfit {
+    padding: 40px 0;
+}
+
+.blog-marathon {
+    padding: 20px 0 40px 0;
+}
+
+.blog-img {
+    padding-left: 40px;
+    width: 25%;
+}
+
+.blog-img img {
+    min-height: 75px;
+    min-width: 75px;
+}
+
+.blog-content {
+    padding: 0 40px;
+    text-align: left;
+    width: 75%;
+}
+
+.blog-content h4, .blog-content p, .blog-content a {
     color: rgba(255, 255, 255, 1);
     line-height: 2.15em;
 }
 
-.blog-overlay h4 {
-    font-size: 1.75em;
+.blog-content p {
+    margin-bottom: 20px;
+}
+
+.blog-content h4 {
+    font-size: max(25px, 1.5vw);
     font-weight: normal;
 }
 
-.blog-overlay a {
+.blog-content a {
     border: 2px solid rgba(255, 255, 255, 1);
-    font-size: 1.25em;
+    font-size: 0.75em;
     font-weight: normal;
-    margin-top: 20px;
-    text-align: center;
-    width: 150px;
+    padding: 10px;
 }
 
-.blog-overlay a:hover {
+.blog-content a:hover {
     background-color: rgba(251, 65, 111, 1);
     border: 2px solid rgba(251, 65, 111, 1);
 }
 
 
-/* Blog Page - grid layout */
-.blog-grid {
-    display: grid;
-    grid-row-gap: 40px;
-    grid-template: repeat(4, 1fr) / 30% 70%;
-    grid-template-areas: "marathon-blog-img marathon-blog-content"
-                        "running-blog-img running-blog-content"
-                        "winning-blog-img winning-blog-content"
-                        "crossfit-blog-img crossfit-blog-content";
+/*
+*
+Individual Blog - styling
+*
+*/
+.individual-blog-overlay {
+    color: rgba(255, 255, 255, 1);
     margin: 0 auto;
-    width: 800px;
+    max-width: 800px;
 }
 
-#marathon-blog-img {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: marathon-blog-img;
+.individual-blog-overlay hr {
+    margin: 0 auto 20px auto;
 }
 
-#marathon-blog-content {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: marathon-blog-content;
-    padding-left: 20px;
+.individual-blog-overlay img {
+    float: left;
+    padding: 20px 20px 20px 5px;
+}
+
+.individual-blog-overlay p {
+    font-size: 1.25em;
+    line-height: 2.15em;
+    padding: 20px 0 40px 0;
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#running-blog-img {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: running-blog-img;
-}
-
-#running-blog-content {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: running-blog-content;
-    padding-left: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#winning-blog-img {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: winning-blog-img;
-}
-
-#winning-blog-content {
-    border-bottom: 1px solid rgba(211, 211, 211, .4);
-    grid-area: winning-blog-content;
-    padding-left: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#crossfit-blog-img {
-    grid-area: crossfit-blog-img;
-    padding-bottom: 40px;
-}
-
-#crossfit-blog-content {
-    grid-area: crossfit-blog-content;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-indent: 50px;
 }
 
 
-/* Contact Page - styling */
+/*
+*
+Contact Page - styling
+*
+*/
 .contact-overlay {
     color: rgba(255, 255, 255, 1);
-}
-
-.contact-overlay h3 {
-    color: rgba(251, 65, 111, 1);
-    font-size: 2.5em;
-    padding: 40px 0 20px 0;
 }
 
 .contact-overlay hr {
@@ -385,7 +403,6 @@ nav {
     font-weight: normal;
     margin: 5px auto 0 auto;
     padding: 5px 0;
-    width: 450px;
 }
 
 .contact-form input {
@@ -397,6 +414,9 @@ nav {
     color: rgba(255, 255, 255, 1);
     margin-top: 20px;
     width: 150px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .contact-form input#send:hover {
@@ -405,50 +425,25 @@ nav {
 }
 
 
-/* Individual Blog - styling*/
-.individual-blog-overlay {
-    color: rgba(255, 255, 255, 1);
-    margin: 0 auto;
-    width: 800px;
-}
-
-.individual-blog-overlay h3 {
-    color: rgba(251, 65, 111, 1);
-    font-size: 2.5em;
-    padding: 40px 0 20px 0;
-}
-
-.individual-blog-overlay hr {
-    margin: 0 auto 20px auto;
-}
-
-.individual-blog-overlay img {
-    float: left;
-    padding: 20px 20px 20px 5px;
-}
-
-.individual-blog-overlay p {
-    font-size: 1.25em;
-    line-height: 2.15em;
-    padding: 20px 0 40px 0;
-    text-align: left;
-    text-indent: 50px;
-}
-
-
-/* Footer - styling */
+/*
+*
+Footer - styling
+*
+*/
 footer {
     background-color: rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 1);
     height: 125px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .footer-content {
+    height: 125px;
     margin: 0 auto;
-    width: 1000px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .footer-content p {
@@ -478,4 +473,125 @@ footer {
 
 .pinterest-icon:hover {
     content: url("./Images/pinterest-yellow.png");
+}
+
+/*
+*
+Media Queries - screen
+*
+*/
+@media only screen and (max-width: 349px) {
+    .nav-container img {
+        height: 70px;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 514px) {
+    .contact-form input, .contact-form textarea {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 515px) {
+    .contact-form input, .contact-form textarea {
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+    .nav-container img {
+        height: 80px;
+        margin-left: 5%;
+    }
+}
+
+/* Mobile nav hamburger menu */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        padding-top: 70px;
+    }
+
+    .nav-container {
+        position: relative;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .nav-bar li {
+        padding: 0;
+    }
+
+    .menu-toggle .bar {
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+    #mobile-menu {
+        transform: translate(5%, 20%);
+        position: absolute;
+        right: 5%;
+        top: 20%;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        margin: 0;
+        opacity: 0;
+        transition: all 0.4s ease-out 0s;
+        width: 100%;
+        position: absolute;
+        left: -100%;
+        top: 225px;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        transition: all 0.4s ease-out 0s;
+        left: 0;
+    }
+
+    .nav-links {
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+        display: table;
+        line-height: 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links:hover {
+        background-color: rgba(28, 28, 28, .85);
+        transition: all 0.4s ease-out 0s;
+    }
+
+    .about-overlay, .running-overlay, .individual-blog-overlay {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .nav-bar ul li {
+        display: inline-block;
+        padding: 0 20px;
+    }
 }
