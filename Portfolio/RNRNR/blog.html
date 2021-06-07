@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
 
-        <meta charset="utf-8">
-        <title>RNRNR Running - Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link href="./style-RNRNR.css" type="text/css" rel="stylesheet">
+
+        <title>RNRNR Running - Blog</title>
         
     </head>
 
@@ -13,19 +16,34 @@
 
         <header>
 
-            <div class="header-content">
+            <div class="nav-container">
 
                 <a href="./home.html"><img src="./Images/logo.png" alt="RNRNR logo"></a>
 
-                <nav>
+                <nav role="navigation" class="nav-bar">
 
-                    <ul class="uppercase Arial-Black">
-                        <li><a href="./home.html">home</a></li>
-                        <li><a href="./about.html">about</a></li>
-                        <li><a href="./running.html">running</a></li>
-                        <li><a href="./blog.html" class="active-page">blog</a></li>
-                        <li><a href="./contact.html">contact</a></li>
+                    <div class="menu-toggle" id="mobile-menu">
+
+                        <span class="bar"></span>
+                        <span class="bar"></span> 
+                        <span class="bar"></span>
+
+                    </div>
+
+                    <ul class="nav-menu uppercase Arial-Black">
+
+                        <li><a href="./home.html" class="nav-links">home</a></li>
+
+                        <li><a href="./about.html" class="nav-links">about</a></li>
+
+                        <li><a href="./running.html" class="nav-links">running</a></li>
+                        
+                        <li><a href="./blog.html" class="nav-links active-page">blog</a></li>
+
+                        <li><a href="./contact.html" class="nav-links">contact</a></li>
+
                     </ul>
+
                 </nav>
 
             </div>
@@ -36,73 +54,85 @@
 
             <div class="blog-overlay black-overlay">
                 
-                <h3 class="uppercase Arial-Black">blog</h3>
+                <h3 class="section-head uppercase Arial-Black">blog</h3>
 
                 <hr class="pink-hr">
 
-                <div class="blog-grid">
+                <div class="blog-marathon">
 
-                    <div id="marathon-blog-img">
+                    <div class="blog-img">
 
                         <img src="./Images/blog-image1.png" alt="Sweating woman">
 
                     </div>
 
-                    <div id="marathon-blog-content">
+                    <div class="blog-content">
                         
                         <h4 class="uppercase">preparing for a marathon</h4>
 
                         <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
 
-                        <a href="./blog-marathon.html"><h6 class="uppercase">keep reading</h6></a>
+                        <a href="./blog-marathon.html" class="uppercase">keep reading</a>
 
                     </div>
 
-                    <div id="running-blog-img">
+                </div>
+
+                <div class="blog-running">
+
+                    <div class="blog-img">
 
                         <img src="./Images/blog-image2.png" alt="Woman kickboxing">
 
                     </div>
 
-                    <div id="running-blog-content">
+                    <div class="blog-content">
 
                         <h4 class="uppercase">aside from running</h4>
 
                         <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
 
-                        <a href="./blog-running.html"><h6 class="uppercase">keep reading</h6></a>
+                        <a href="./blog-running.html" class="uppercase">keep reading</a>
 
                     </div>
 
-                    <div id="winning-blog-img">
+                </div>
+
+                <div class="blog-winning">
+
+                    <div class="blog-img">
 
                         <img src="./Images/blog-image3.png" alt="Man working out">
 
                     </div>
 
-                    <div id="winning-blog-content">
+                    <div class="blog-content">
 
                         <h4 class="uppercase">winning is everything</h4>
 
                         <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
 
-                        <a href="./blog-winning.html"><h6 class="uppercase">keep reading</h6></a>
+                        <a href="./blog-winning.html" class="uppercase">keep reading</a>
 
                     </div>
 
-                    <div id="crossfit-blog-img">
+                </div>
+
+                <div class="blog-crossfit">
+
+                    <div class="blog-img">
 
                         <img src="./Images/blog-image4.png" alt="Man clapping">
                         
                     </div>
 
-                    <div id="crossfit-blog-content">
+                    <div class="blog-content">
 
                         <h4 class="uppercase">running and crossfit</h4>
 
                         <p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What’s more, they’re absolutely free! You can do a lot with them. You can modify them...</p>
 
-                        <a href="./blog-crossfit.html"><h6 class="uppercase">keep reading</h6></a>
+                        <a href="./blog-crossfit.html" class="uppercase">keep reading</a>
 
                     </div>
 
@@ -133,6 +163,8 @@
             </div>
 
         </footer>
+
+        <script src="./main.js"></script>
 
     </body>
 
